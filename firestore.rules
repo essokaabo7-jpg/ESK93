@@ -1,0 +1,116 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    function signedIn() { return request.auth != null; }
+    function isAdmin() {
+      return signedIn() && exists(/databases/$(database)/documents/admins/$(request.auth.uid));
+    }
+    function onlyChanges(keys) {
+      return request.resource.data.diff(resource.data).affectedKeys().hasOnly(keys);
+    }
+    function chatMembers(cid) {
+      return get(/databases/$(database)/documents/chats/$(cid)).data.members;
+    }
+
+    // Administrateurs : créés à la main dans la console Firebase (voir README)
+    match /admins/{uid} {
+      allow read: if signedIn() && request.auth.uid == uid;
+      allow write: if false;
+    }
+
+    // Profil public (nom) + données privées (e-mail, téléphone, messages lus)
+    match /users/{uid} {
+      allow read: if true;
+      allow create, update: if signedIn() && request.auth.uid == uid
+        && request.resource.data.name is string
+        && request.resource.data.name.size() >= 2
+        && request.resource.data.name.size() <= 40
+        && (!('photo' in request.resource.data) || request.resource.data.photo.size() < 80000);
+      allow delete: if false;
+      match /private/{doc} {
+        allow read, write: if signedIn() && request.auth.uid == uid;
+      }
+    }
+
+    // Annonces : lecture publique, écriture par le vendeur
+    match /items/{id} {
+      allow read: if true;
+      // Retire "email_verified" si tu ne veux pas exiger l'e-mail vérifié pour vendre.
+      allow create: if signedIn()
+        && request.auth.token.email_verified == true
+        && request.resource.data.sellerId == request.auth.uid
+        && request.resource.data.status == 'open'
+        && request.resource.data.t is string && request.resource.data.t.size() <= 60
+        && request.resource.data.p is number && request.resource.data.p >= 100;
+      allow update: if signedIn() && (
+        // le vendeur modifie sa propre annonce
+        (resource.data.sellerId == request.auth.uid
+          && request.resource.data.sellerId == resource.data.sellerId)
+        // un acheteur réserve une annonce en ligne
+        || (resource.data.status == 'open' && request.resource.data.status == 'pending'
+          && request.resource.data.buyerId == request.auth.uid
+          && onlyChanges(['status', 'buyerId', 'buyerName']))
+        // l'acheteur confirme la réception
+        || (resource.data.buyerId == request.auth.uid
+          && resource.data.deliv == 1 && request.resource.data.deliv == 2
+          && onlyChanges(['deliv']))
+      );
+      allow delete: if signedIn() && resource.data.sellerId == request.auth.uid;
+    }
+
+    // Ventes confirmées et commission de 5 %
+    match /sales/{id} {
+      allow read: if signedIn() && (resource.data.sellerId == request.auth.uid || isAdmin());
+      allow create: if signedIn()
+        && request.resource.data.sellerId == request.auth.uid
+        && get(/databases/$(database)/documents/items/$(id)).data.sellerId == request.auth.uid
+        && request.resource.data.price == get(/databases/$(database)/documents/items/$(id)).data.finalPrice
+        && request.resource.data.fee >= request.resource.data.price * 0.05 - 1;
+      allow update: if isAdmin() && onlyChanges(['paid']);
+      allow delete: if signedIn() && resource.data.sellerId == request.auth.uid && resource.data.paid == false;
+    }
+
+    // Photos complètes des annonces (la liste n'affiche que la vignette)
+    match /itemImgs/{id} {
+      allow read: if true;
+      allow create: if signedIn() && request.resource.data.sellerId == request.auth.uid
+        && request.resource.data.imgs.size() <= 3;
+      allow update: if signedIn() && resource.data.sellerId == request.auth.uid
+        && request.resource.data.sellerId == request.auth.uid && request.resource.data.imgs.size() <= 3;
+      allow delete: if signedIn() && resource.data.sellerId == request.auth.uid;
+    }
+
+    // Avis : un par vente, uniquement par l'acheteur après réception
+    match /ratings/{id} {
+      allow read: if true;
+      allow create: if signedIn()
+        && request.resource.data.buyerId == request.auth.uid
+        && request.resource.data.stars is int
+        && request.resource.data.stars >= 1 && request.resource.data.stars <= 5
+        && get(/databases/$(database)/documents/items/$(id)).data.buyerId == request.auth.uid
+        && get(/databases/$(database)/documents/items/$(id)).data.deliv == 2
+        && request.resource.data.sellerId == get(/databases/$(database)/documents/items/$(id)).data.sellerId;
+      allow update, delete: if false;
+    }
+
+    // Discussions privées : seuls l'acheteur et le vendeur y ont accès
+    match /chats/{cid} {
+      allow read: if signedIn() && request.auth.uid in resource.data.members;
+      allow create: if signedIn()
+        && request.auth.uid in request.resource.data.members
+        && request.resource.data.buyerId == request.auth.uid;
+      allow update: if signedIn() && request.auth.uid in resource.data.members
+        && request.resource.data.members == resource.data.members;
+      allow delete: if false;
+
+      match /msgs/{mid} {
+        allow read: if signedIn() && request.auth.uid in chatMembers(cid);
+        allow create: if signedIn() && request.auth.uid in chatMembers(cid)
+          && request.resource.data.from == request.auth.uid
+          && request.resource.data.t is string && request.resource.data.t.size() <= 500;
+        allow update, delete: if false;
+      }
+    }
+  }
+}

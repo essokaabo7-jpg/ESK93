@@ -1,0 +1,359 @@
+From: <Saved by Blink>
+Snapshot-Content-Location: https://esk93.netlify.app/
+Subject: ESK93
+Date: Fri, 27 Nov 2026 09:36:29 GMT
+MIME-Version: 1.0
+Content-Type: multipart/related;
+	type="text/html";
+	boundary="----MultipartBoundary--I7NqLRImhFd7mhoAvQzivryMgWYk4qW46mScyYoIB7----"
+
+
+------MultipartBoundary--I7NqLRImhFd7mhoAvQzivryMgWYk4qW46mScyYoIB7----
+Content-Type: text/html
+Content-ID: <frame-CA6405D1E72FA8F021BD2114DB43075E@mhtml.blink>
+Content-Transfer-Encoding: binary
+Content-Location: https://esk93.netlify.app/
+
+<!DOCTYPE html><html lang="fr"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><link rel="stylesheet" type="text/css" href="cid:css-41aaabe1-2438-4d04-ba46-9cdd9646f201@mhtml.blink" />
+
+<!-- This site is hosted on Netlify. Anyone can build and deploy a site
+     like this one for free: https://netlify.new/?utm_campaign=loops&utm_source=ai-legible&utm_medium=owned&utm_content=comment&utm_id=0b3bd5d4-5359-486f-97e3-7cb827565f33
+     Netlify hosting facts for this site: static/SSR served via Netlify Edge. -->
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>ESK93</title>
+<meta name="description" content="ESK93 : achète et vends facilement. Crée ton compte gratuit en 1 minute.">
+<meta property="og:title" content="ESK93 — Achète et vends facilement">
+<meta property="og:description" content="Publie tes articles, discute en privé avec les vendeurs et trouve de bonnes affaires.">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#2a47f5">
+<link rel="manifest" href="https://esk93.netlify.app/manifest.webmanifest">
+<link rel="icon" href="https://esk93.netlify.app/icon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="https://esk93.netlify.app/icon-192.png">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,800&amp;display=swap" rel="stylesheet">
+
+</head>
+<body>
+<header><div class="logo">ESK<i>93</i></div><div class="hd"><span id="who"></span><button class="ib" data-a="shareapp" aria-label="Partager ESK93"><svg viewBox="0 0 24 24"><circle cx="18" cy="5" r="3"></circle><circle cx="6" cy="12" r="3"></circle><circle cx="18" cy="19" r="3"></circle><path d="M8.6 10.5l6.8-4M8.6 13.5l6.8 4"></path></svg></button></div></header>
+<main id="m"><input id="q" class="in" placeholder="Rechercher un article" value="" aria-label="Rechercher"><div class="chips"><button class="chip on" data-a="cat" data-v="Tout">Tout</button><button class="chip" data-a="cat" data-v="Tech">Tech</button><button class="chip" data-a="cat" data-v="Mode">Mode</button><button class="chip" data-a="cat" data-v="Maison">Maison</button><button class="chip" data-a="cat" data-v="Sport">Sport</button><button class="chip" data-a="cat" data-v="Loisirs">Loisirs</button><button class="chip" data-a="cat" data-v="Autre">Autre</button></div><div class="grid" id="g"><div class="empty" style="grid-column:1/-1">Aucune annonce pour l’instant.<br>Sois le premier à mettre un article en vente !</div></div></main>
+<nav id="nav"><button data-a="tab" data-v="home" class="on" aria-label="Explorer"><span class="ic"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"></circle><path d="M21 21l-4.3-4.3"></path></svg></span>Explorer</button><button data-a="tab" data-v="sell" class="" aria-label="Vendre"><span class="ic"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"></circle><path d="M12 8v8M8 12h8"></path></svg></span>Vendre</button><button data-a="tab" data-v="msgs" class="" aria-label="Messages"><span class="ic"><svg viewBox="0 0 24 24"><path d="M21 12a8 8 0 0 1-11.6 7.1L4 20l1-4.6A8 8 0 1 1 21 12z"></path></svg></span>Messages</button><button data-a="tab" data-v="auth" class="" aria-label="Connexion"><span class="ic"><svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"></circle><path d="M4 21c0-4.4 3.6-7 8-7s8 2.6 8 7"></path></svg></span>Connexion</button></nav>
+<div id="sheet" class="hide"></div>
+<div id="zoom" class="hide" data-a="zoomx"></div>
+<div id="toast" class="hide" role="status"></div>
+
+
+
+
+
+<iframe ng-non-bindable="" frameborder="0" hspace="0" marginheight="0" marginwidth="0" scrolling="no" tabindex="-1" vspace="0" width="100%" aria-hidden="true" id="I0_1795772152004" name="I0_1795772152004" src="cid:frame-1A7684E3D018E13EE19759B49BEDB466@mhtml.blink" style="position: absolute; top: -100px; width: 1px; height: 1px;"></iframe><iframe id="nl-badge-frame" title="Powered by Netlify" src="cid:frame-8D660F47B082B9E947CB45CC7D56E25D@mhtml.blink" style="position: fixed; bottom: 0px; right: 0px; border: 0px; margin: 0px; padding: 0px; background: transparent; color-scheme: dark; z-index: 2147483645; width: 192px; height: 64px; clip-path: path(&quot;M 3 3 H 179 V 51 H 3 Z&quot;);" data-nl-ready="1"></iframe></body></html>
+------MultipartBoundary--I7NqLRImhFd7mhoAvQzivryMgWYk4qW46mScyYoIB7----
+Content-Type: text/css
+Content-Transfer-Encoding: binary
+Content-Location: https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,800&display=swap
+
+@charset "utf-8";
+
+@font-face { font-family: "Bricolage Grotesque"; font-style: normal; font-weight: 400; font-stretch: 100%; font-display: swap; src: url("https://fonts.gstatic.com/s/bricolagegrotesque/v9/3y9K6as8bTXq_nANBjzKo3IeZx8z6up5BeSl9D4dj_x9PpZBMlGHInHWVyNJtvI.woff2") format("woff2"); unicode-range: U+102-103, U+110-111, U+128-129, U+168-169, U+1A0-1A1, U+1AF-1B0, U+300-301, U+303-304, U+308-309, U+323, U+329, U+1EA0-1EF9, U+20AB; }
+
+@font-face { font-family: "Bricolage Grotesque"; font-style: normal; font-weight: 400; font-stretch: 100%; font-display: swap; src: url("https://fonts.gstatic.com/s/bricolagegrotesque/v9/3y9K6as8bTXq_nANBjzKo3IeZx8z6up5BeSl9D4dj_x9PpZBMlGGInHWVyNJtvI.woff2") format("woff2"); unicode-range: U+100-2BA, U+2BD-2C5, U+2C7-2CC, U+2CE-2D7, U+2DD-2FF, U+304, U+308, U+329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF; }
+
+@font-face { font-family: "Bricolage Grotesque"; font-style: normal; font-weight: 400; font-stretch: 100%; font-display: swap; src: url("https://fonts.gstatic.com/s/bricolagegrotesque/v9/3y9K6as8bTXq_nANBjzKo3IeZx8z6up5BeSl9D4dj_x9PpZBMlGIInHWVyNJ.woff2") format("woff2"); unicode-range: U+0-FF, U+131, U+152-153, U+2BB-2BC, U+2C6, U+2DA, U+2DC, U+304, U+308, U+329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+
+@font-face { font-family: "Bricolage Grotesque"; font-style: normal; font-weight: 600; font-stretch: 100%; font-display: swap; src: url("https://fonts.gstatic.com/s/bricolagegrotesque/v9/3y9K6as8bTXq_nANBjzKo3IeZx8z6up5BeSl9D4dj_x9PpZBMlGHInHWVyNJtvI.woff2") format("woff2"); unicode-range: U+102-103, U+110-111, U+128-129, U+168-169, U+1A0-1A1, U+1AF-1B0, U+300-301, U+303-304, U+308-309, U+323, U+329, U+1EA0-1EF9, U+20AB; }
+
+@font-face { font-family: "Bricolage Grotesque"; font-style: normal; font-weight: 600; font-stretch: 100%; font-display: swap; src: url("https://fonts.gstatic.com/s/bricolagegrotesque/v9/3y9K6as8bTXq_nANBjzKo3IeZx8z6up5BeSl9D4dj_x9PpZBMlGGInHWVyNJtvI.woff2") format("woff2"); unicode-range: U+100-2BA, U+2BD-2C5, U+2C7-2CC, U+2CE-2D7, U+2DD-2FF, U+304, U+308, U+329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF; }
+
+@font-face { font-family: "Bricolage Grotesque"; font-style: normal; font-weight: 600; font-stretch: 100%; font-display: swap; src: url("https://fonts.gstatic.com/s/bricolagegrotesque/v9/3y9K6as8bTXq_nANBjzKo3IeZx8z6up5BeSl9D4dj_x9PpZBMlGIInHWVyNJ.woff2") format("woff2"); unicode-range: U+0-FF, U+131, U+152-153, U+2BB-2BC, U+2C6, U+2DA, U+2DC, U+304, U+308, U+329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+
+@font-face { font-family: "Bricolage Grotesque"; font-style: normal; font-weight: 800; font-stretch: 100%; font-display: swap; src: url("https://fonts.gstatic.com/s/bricolagegrotesque/v9/3y9K6as8bTXq_nANBjzKo3IeZx8z6up5BeSl9D4dj_x9PpZBMlGHInHWVyNJtvI.woff2") format("woff2"); unicode-range: U+102-103, U+110-111, U+128-129, U+168-169, U+1A0-1A1, U+1AF-1B0, U+300-301, U+303-304, U+308-309, U+323, U+329, U+1EA0-1EF9, U+20AB; }
+
+@font-face { font-family: "Bricolage Grotesque"; font-style: normal; font-weight: 800; font-stretch: 100%; font-display: swap; src: url("https://fonts.gstatic.com/s/bricolagegrotesque/v9/3y9K6as8bTXq_nANBjzKo3IeZx8z6up5BeSl9D4dj_x9PpZBMlGGInHWVyNJtvI.woff2") format("woff2"); unicode-range: U+100-2BA, U+2BD-2C5, U+2C7-2CC, U+2CE-2D7, U+2DD-2FF, U+304, U+308, U+329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF; }
+
+@font-face { font-family: "Bricolage Grotesque"; font-style: normal; font-weight: 800; font-stretch: 100%; font-display: swap; src: url("https://fonts.gstatic.com/s/bricolagegrotesque/v9/3y9K6as8bTXq_nANBjzKo3IeZx8z6up5BeSl9D4dj_x9PpZBMlGIInHWVyNJ.woff2") format("woff2"); unicode-range: U+0-FF, U+131, U+152-153, U+2BB-2BC, U+2C6, U+2DA, U+2DC, U+304, U+308, U+329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+------MultipartBoundary--I7NqLRImhFd7mhoAvQzivryMgWYk4qW46mScyYoIB7----
+Content-Type: text/css
+Content-Transfer-Encoding: binary
+Content-Location: cid:css-41aaabe1-2438-4d04-ba46-9cdd9646f201@mhtml.blink
+
+@charset "utf-8";
+
+:root { --bg: #eef0f3; --card: #fff; --ink: #12161d; --mut: #5d6675; --line: #d9dde4; --acc: #2a47f5; --on: #fff; --ok: #12805c; --warn: #a65b00; }
+
+@media (prefers-color-scheme: dark) {
+  :root { --bg: #0e1116; --card: #171b23; --ink: #eef1f6; --mut: #98a2b3; --line: #2a303b; --acc: #7b91ff; --on: #0e1116; --ok: #4cd6a2; --warn: #ffb454; }
+}
+
+* { box-sizing: border-box; }
+
+body { margin: 0px; background: var(--bg); color: var(--ink); font-family: "Bricolage Grotesque", system-ui, sans-serif; padding-bottom: 84px; }
+
+header { position: sticky; top: 0px; background: var(--bg); z-index: 10; padding: 14px 16px 8px; display: flex; align-items: baseline; justify-content: space-between; gap: 10px; }
+
+.logo { font-weight: 800; font-size: 1.9rem; letter-spacing: -0.04em; }
+
+.logo i { font-style: normal; color: var(--acc); }
+
+header span { color: var(--mut); font-size: 0.9rem; text-align: right; }
+
+a { color: var(--acc); }
+
+main { max-width: 760px; margin: 0px auto; padding: 0px 16px; }
+
+input, select, textarea, button { font: inherit; color: inherit; }
+
+.in { width: 100%; background: var(--card); border: 1.5px solid var(--line); border-radius: 10px; padding: 12px; margin-top: 6px; }
+
+.in:focus-visible, button:focus-visible, [role="button"]:focus-visible { outline: 3px solid var(--acc); outline-offset: 2px; }
+
+.row { display: flex; gap: 8px; }
+
+.row > * { flex: 1 1 0%; }
+
+.chips { display: flex; gap: 8px; overflow-x: auto; padding: 10px 0px; }
+
+.chip { flex: 0 0 auto; border: 1.5px solid var(--line); background: var(--card); border-radius: 999px; padding: 7px 14px; cursor: pointer; }
+
+.chip.on { background: var(--ink); color: var(--bg); border-color: var(--ink); }
+
+.grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px; }
+
+@media (min-width: 620px) {
+  .grid { grid-template-columns: repeat(3, 1fr); }
+}
+
+.card { background: var(--card); border-radius: 14px; overflow: hidden; cursor: pointer; border: 1px solid var(--line); }
+
+.tile { height: 150px; display: flex; align-items: center; justify-content: center; font-size: 2.6rem; font-weight: 800; background: var(--line); color: var(--mut); }
+
+.info { padding: 10px 12px 12px; }
+
+.info h3 { margin: 0px 0px 4px; font-size: 1rem; font-weight: 600; line-height: 1.2; overflow-wrap: anywhere; }
+
+.pr { font-weight: 800; font-size: 1.1rem; }
+
+.mu { color: var(--mut); font-size: 0.85rem; }
+
+.badge { display: inline-block; background: var(--ok); color: var(--on); border-radius: 6px; padding: 2px 8px; font-size: 0.8rem; font-weight: 600; }
+
+.badge.w { background: var(--warn); }
+
+.badge.g { background: var(--mut); }
+
+.btn { background: var(--acc); color: var(--on); border: 0px; border-radius: 12px; padding: 14px; font-weight: 600; cursor: pointer; width: 100%; }
+
+.btn.alt { background: transparent; color: var(--ink); border: 1.5px solid var(--line); }
+
+.btn:disabled { opacity: 0.45; cursor: default; }
+
+.item { display: flex; gap: 12px; align-items: center; background: var(--card); border: 1px solid var(--line); border-radius: 14px; padding: 10px; margin-bottom: 10px; }
+
+.item .tile { width: 64px; height: 64px; font-size: 1.6rem; border-radius: 10px; flex: 0 0 auto; }
+
+.item .info { flex: 1 1 0%; padding: 0px; min-width: 0px; }
+
+.item .acts { display: flex; flex-direction: column; gap: 6px; }
+
+.sm { background: none; border: 1.5px solid var(--line); border-radius: 8px; padding: 6px 10px; cursor: pointer; font-size: 0.85rem; }
+
+h2 { margin: 6px 0px 12px; font-size: 1.4rem; letter-spacing: -0.02em; }
+
+label { display: block; margin-bottom: 12px; font-weight: 600; font-size: 0.9rem; }
+
+.empty { text-align: center; color: var(--mut); padding: 40px 10px; line-height: 1.5; }
+
+.note { background: var(--card); border: 1px dashed var(--line); border-radius: 12px; padding: 12px; color: var(--mut); font-size: 0.9rem; margin: 10px 0px; line-height: 1.45; }
+
+nav { position: fixed; left: 0px; right: 0px; bottom: 0px; background: var(--card); border-top: 1px solid var(--line); display: flex; padding: 8px 6px calc(8px + env(safe-area-inset-bottom,0px)); z-index: 10; }
+
+nav button { flex: 1 1 0%; background: none; border: 0px; padding: 6px 4px; cursor: pointer; color: var(--mut); font-size: 0.72rem; display: flex; flex-direction: column; align-items: center; gap: 3px; }
+
+nav .ic { position: relative; display: block; height: 26px; }
+
+nav svg, .ib svg { width: 25px; height: 25px; stroke: currentcolor; fill: none; stroke-width: 1.9; stroke-linecap: round; stroke-linejoin: round; }
+
+nav .dot { position: absolute; top: -4px; right: -10px; background: var(--warn); color: var(--on); font-style: normal; font-size: 0.65rem; font-weight: 800; min-width: 17px; height: 17px; border-radius: 9px; display: flex; align-items: center; justify-content: center; padding: 0px 4px; }
+
+nav button.on { color: var(--acc); font-weight: 800; }
+
+#sheet { position: fixed; inset: 0px; background: rgba(0, 0, 0, 0.55); z-index: 30; display: flex; align-items: flex-end; justify-content: center; }
+
+.sh { background: var(--bg); width: 100%; max-width: 560px; border-radius: 20px 20px 0px 0px; padding: 16px 16px calc(16px + env(safe-area-inset-bottom,0px)); max-height: 92%; overflow: auto; }
+
+.sh .tile { height: 170px; border-radius: 14px; margin-bottom: 12px; font-size: 4rem; }
+
+#ml { max-height: 46vh; overflow: auto; margin: 10px 0px; display: flex; flex-direction: column; }
+
+.bub { max-width: 82%; padding: 8px 12px; border-radius: 14px; margin: 4px 0px; background: var(--card); border: 1px solid var(--line); overflow-wrap: anywhere; }
+
+.bub.me { margin-left: auto; background: var(--acc); color: var(--on); border: 0px; }
+
+.bub small { display: block; opacity: 0.7; font-size: 0.7rem; }
+
+#toast { position: fixed; left: 50%; bottom: 96px; transform: translateX(-50%); background: var(--ink); color: var(--bg); padding: 10px 18px; border-radius: 999px; z-index: 40; font-weight: 600; max-width: 90%; text-align: center; }
+
+#zoom { position: fixed; inset: 0px; background: rgba(0, 0, 0, 0.92); z-index: 50; display: flex; align-items: center; justify-content: center; padding: 12px; cursor: zoom-out; }
+
+#zoom img { max-width: 100%; max-height: 100%; object-fit: contain; }
+
+.big { width: 100%; max-height: 48vh; object-fit: contain; background: var(--line); border-radius: 14px; display: block; cursor: zoom-in; margin-bottom: 10px; }
+
+.thumbs { display: flex; gap: 8px; margin: 0px 0px 12px; flex-wrap: wrap; }
+
+.thumbs img { width: 64px; height: 64px; object-fit: cover; border-radius: 8px; border: 2px solid var(--line); cursor: pointer; }
+
+.thumbs img.on { border-color: var(--acc); }
+
+.av { width: 40px; height: 40px; border-radius: 50%; object-fit: cover; background: var(--line); display: flex; align-items: center; justify-content: center; font-weight: 800; color: var(--mut); flex: 0 0 auto; }
+
+.av.lg { width: 84px; height: 84px; font-size: 2rem; }
+
+.av.sm { width: 28px; height: 28px; font-size: 0.85rem; }
+
+.hd { display: flex; align-items: center; gap: 8px; }
+
+#who { display: flex; align-items: center; gap: 6px; }
+
+.ib { background: none; border: 0px; padding: 6px; cursor: pointer; color: var(--ink); display: flex; }
+
+.hide { display: none !important; }
+------MultipartBoundary--I7NqLRImhFd7mhoAvQzivryMgWYk4qW46mScyYoIB7----
+Content-Type: text/html
+Content-ID: <frame-1A7684E3D018E13EE19759B49BEDB466@mhtml.blink>
+Content-Transfer-Encoding: binary
+Content-Location: https://esk93-c7a19.firebaseapp.com/__/auth/iframe?apiKey=AIzaSyAgM1-JdCNqP8fNz2IoEIdk0LavLuXetEo&appName=%5BDEFAULT%5D&v=10.14.1&eid=p&usegapi=1&jsh=m%3B%2F_%2Fscs%2Fabc-static%2F_%2Fjs%2Fk%3Dgapi.lb.fr.NwStCmsbVJ4.O%2Fd%3D1%2Frs%3DAHpOoo_6HDxoiWLkgSC_FQfcFOPTefeGBg%2Fm%3D__features__#id=I0_1795772152004&_gfid=I0_1795772152004&parent=https%3A%2F%2Fesk93.netlify.app&pfname=&rpctoken=15584916
+
+<!DOCTYPE html><html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+
+</head>
+<body marginwidth="0" marginheight="0">
+
+
+</body></html>
+------MultipartBoundary--I7NqLRImhFd7mhoAvQzivryMgWYk4qW46mScyYoIB7----
+Content-Type: text/html
+Content-ID: <frame-8D660F47B082B9E947CB45CC7D56E25D@mhtml.blink>
+Content-Transfer-Encoding: binary
+
+<!DOCTYPE html><html class="nl-narrow" style="--nl-vw: 360px; --nl-vh: 691px;"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><link rel="stylesheet" type="text/css" href="cid:css-6bc0c4eb-dc67-4c32-81b5-9357259dece1@mhtml.blink" /><meta name="color-scheme" content="dark"></head><body>
+      <div class="nl-wrap">
+        <section class="nl-card" id="nl-card" aria-label="Build your own site on Netlify">
+          <button type="button" class="nl-icon-btn nl-tap nl-card-close" id="nl-card-close" aria-label="Close"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" aria-hidden="true"><path d="M4.5 4.5 11.5 11.5M11.5 4.5 4.5 11.5"></path></svg></button>
+          <h2><em>Build your own site with Netlify</em></h2>
+          <p>Describe what you want, and an AI agent designs, builds and deploys it in minutes.</p>
+          <form class="nl-prompt" action="https://app.netlify.com/start" method="get" target="_blank" rel="noopener">
+            <textarea name="prompt" rows="2" required="" maxlength="300" autocomplete="off" enterkeyhint="go" placeholder="A shop for my handmade surfboards…" aria-label="Describe the site you want to build"></textarea>
+            <button type="submit" class="nl-send nl-tap" aria-label="Build this site"><svg width="13" height="13" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 12.75v-9.5M3.9 7.35 8 3.25l4.1 4.1"></path></svg></button>
+            
+            
+            
+            
+            
+            
+          </form>
+          <div class="nl-or"><span>or</span></div>
+          <a class="nl-drop" href="https://app.netlify.com/drop?utm_source=netlify_badge&amp;utm_campaign=loops&amp;utm_medium=owned&amp;utm_content=drop&amp;utm_id=0b3bd5d4-5359-486f-97e3-7cb827565f33" target="_blank" rel="noopener">
+            <span>Drop a site you already have</span><span class="nl-arrow" aria-hidden="true">→</span>
+          </a>
+          
+        </section>
+        <button type="button" class="nl-badge" id="nl-badge" aria-expanded="false" aria-controls="nl-card" aria-label="Powered by Netlify — build your own site">
+          <svg width="18" height="18" viewBox="-45.625 -47.625 456.25 456.25" fill="none" aria-hidden="true">
+    <path fill-rule="evenodd" clip-rule="evenodd" d="M122.608 207.222V298.975C122.608 301.415 123.574 303.775 125.317 305.518L177.467 357.668C181.06 361.261 186.932 361.261 190.525 357.668L232.675 315.519C236.268 311.926 236.268 306.053 232.675 302.434L133.119 202.878C129.231 198.99 122.608 201.726 122.608 207.222Z" fill="white"></path>
+    <path fill-rule="evenodd" clip-rule="evenodd" d="M232.675 44.8449L190.525 2.69468C186.932 -0.898228 181.06 -0.898228 177.467 2.69468L125.317 54.846C123.574 56.5889 122.608 58.922 122.608 61.362V153.115C122.608 158.584 129.231 161.346 133.119 157.459L232.675 57.9031C236.268 54.3101 236.268 48.4385 232.675 44.8187V44.8449Z" fill="white"></path>
+    <path fill-rule="evenodd" clip-rule="evenodd" d="M307.482 126.543L151.056 174.243C145.238 176.012 145.238 184.243 151.056 186.013L307.482 233.713C310.726 234.705 314.319 233.82 316.706 231.407L361.483 186.629C365.076 183.036 365.076 177.165 361.483 173.545L316.706 128.767C314.292 126.354 310.753 125.469 307.482 126.462V126.515V126.543Z" fill="white"></path>
+    <path d="M48.6878 131.481L6.52195 173.647C2.91992 177.249 2.91992 183.089 6.52195 186.691L48.6883 228.857C52.2903 232.459 58.1302 232.459 61.7322 228.857L103.898 186.691C107.5 183.089 107.5 177.249 103.898 173.647L61.7317 131.481C58.1297 127.879 52.2899 127.879 48.6878 131.481Z" fill="white"></path></svg>
+          <span><span class="nl-badge-label">Powered by</span> <span class="nl-badge-brand">Netlify</span></span>
+        </button>
+      </div>
+      
+    </body></html>
+------MultipartBoundary--I7NqLRImhFd7mhoAvQzivryMgWYk4qW46mScyYoIB7----
+Content-Type: text/css
+Content-Transfer-Encoding: binary
+Content-Location: cid:css-6bc0c4eb-dc67-4c32-81b5-9357259dece1@mhtml.blink
+
+@charset "utf-8";
+
+:root { --nl-vw: 360px; --nl-vh: 691px; }
+
+* { box-sizing: border-box; }
+
+html, body { margin: 0px; padding: 0px; background: transparent; overflow: hidden; }
+
+body { display: flex; align-items: flex-end; justify-content: flex-end; height: 100vh; padding: 8px 18px 18px 8px; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; font-size: 14px; line-height: 1.5; color: rgb(244, 249, 249); -webkit-font-smoothing: antialiased; }
+
+.nl-wrap { display: flex; flex-direction: column; align-items: flex-end; gap: 10px; width: max-content; max-width: calc(var(--nl-vw,100vw) - 26px); }
+
+button { font-family: inherit; cursor: pointer; }
+
+:focus-visible { outline: rgb(50, 230, 226) solid 2px; outline-offset: 2px; border-radius: 6px; }
+
+.nl-icon-btn { position: relative; flex: 0 0 auto; width: 30px; height: 30px; display: inline-flex; align-items: center; justify-content: center; border-radius: 8px; border: 1px solid transparent; background: transparent; color: rgb(213, 227, 230); transition: background 0.15s, color 0.15s; }
+
+.nl-icon-btn:hover { background: rgba(255, 255, 255, 0.08); color: rgb(244, 249, 249); }
+
+.nl-tap::after { content: ""; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: max(100%, 44px); height: max(100%, 44px); }
+
+@keyframes nl-rise { 
+  0% { opacity: 0; transform: translateY(10px) scale(0.97); }
+  100% { opacity: 1; transform: none; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * { animation-duration: 0.01ms !important; transition: none !important; }
+}
+
+.nl-card { position: relative; display: none; width: min(340px,calc(var(--nl-vw,100vw) - 26px)); max-height: calc(var(--nl-vh,100vh) - 84px); overflow-y: auto; background: linear-gradient(rgb(19, 40, 50) 0%, rgb(14, 30, 37) 100%); border: 1px solid rgba(255, 255, 255, 0.09); border-radius: 18px; padding: 18px; transform-origin: right bottom; animation: 0.3s cubic-bezier(0.34, 1.4, 0.4, 1) 0s 1 normal both running nl-rise; }
+
+.nl-card.open { display: block; }
+
+.nl-card-close { position: absolute; top: 10px; right: 10px; }
+
+.nl-card h2 { margin: 0px; padding-right: 30px; font-size: 16px; font-weight: 750; letter-spacing: -0.015em; line-height: 1.35; }
+
+.nl-card h2 em { font-style: normal; background: linear-gradient(90deg, rgb(50, 230, 226), rgb(77, 124, 254), rgb(154, 107, 255)) text; -webkit-text-fill-color: transparent; color: transparent; }
+
+.nl-card p { margin: 8px 0px 0px; font-size: 12.5px; color: rgb(213, 227, 230); }
+
+.nl-prompt { position: relative; margin-top: 14px; background: rgb(16, 34, 43); border: 1px solid rgba(255, 255, 255, 0.09); border-radius: 14px; padding: 10px 12px; transition: border-color 0.15s, box-shadow 0.15s; }
+
+.nl-prompt:focus-within { border-color: rgb(5, 189, 186); box-shadow: rgba(5, 189, 186, 0.18) 0px 0px 0px 3px; }
+
+.nl-prompt textarea { display: block; width: 100%; height: 38px; resize: none; border: 0px; outline: none; background: transparent; color: rgb(244, 249, 249); font-style: inherit; font-variant: inherit; font-weight: inherit; font-stretch: inherit; font-family: inherit; font-optical-sizing: inherit; font-size-adjust: inherit; font-kerning: inherit; font-feature-settings: inherit; font-variation-settings: inherit; font-language-override: inherit; font-size: 13px; line-height: 19px; padding: 0px 28px 0px 0px; }
+
+.nl-prompt textarea::placeholder { color: rgb(169, 189, 194); }
+
+.nl-send { position: absolute; right: 9px; bottom: 9px; width: 24px; height: 24px; flex: 0 0 auto; display: inline-flex; align-items: center; justify-content: center; border: 0px; border-radius: 50%; background: rgb(5, 189, 186); color: rgb(2, 25, 27); transition: background 0.15s; }
+
+.nl-send:hover { background: rgb(50, 230, 226); }
+
+@media (pointer: coarse) {
+  .nl-prompt textarea { font-size: 16px; line-height: 21px; height: 42px; }
+}
+
+.nl-or { display: flex; align-items: center; gap: 10px; margin: 12px 0px; font-size: 10.5px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: rgb(169, 189, 194); }
+
+.nl-or::before, .nl-or::after { content: ""; flex: 1 1 0%; height: 1px; background: rgba(255, 255, 255, 0.09); }
+
+.nl-drop { display: flex; align-items: center; justify-content: space-between; gap: 6px; text-decoration: none; background: rgb(27, 58, 69); border: 1px solid rgba(255, 255, 255, 0.09); border-radius: 10px; padding: 10px 12px; font-size: 13px; font-weight: 600; color: rgb(207, 224, 227); transition: background 0.15s, color 0.15s, border-color 0.15s; }
+
+.nl-drop:hover { background: rgb(34, 71, 83); color: rgb(244, 249, 249); border-color: rgba(50, 230, 226, 0.3); }
+
+.nl-drop .nl-arrow { transition: transform 0.18s cubic-bezier(0.34, 1.4, 0.4, 1); }
+
+.nl-drop:hover .nl-arrow { transform: translateX(3px); }
+
+.nl-badge { display: flex; align-items: center; gap: 9px; white-space: nowrap; border: 1px solid rgba(255, 255, 255, 0.09); background: linear-gradient(rgb(20, 43, 52), rgb(14, 30, 37)); color: rgb(244, 249, 249); border-radius: 999px; padding: 9px 14px 9px 11px; font-size: 13px; font-weight: 600; letter-spacing: 0.01em; transition: border-color 0.2s; }
+
+.nl-badge:hover { border-color: rgba(50, 230, 226, 0.26); }
+
+.nl-hide { display: block; width: 100%; margin-top: 10px; border: 0px; background: transparent; color: rgb(169, 189, 194); font-size: 11.5px; font-weight: 600; padding: 4px; border-radius: 8px; transition: color 0.15s; }
+
+.nl-hide:hover { color: rgb(213, 227, 230); text-decoration: underline; }
+
+.nl-badge-label { color: rgb(213, 227, 230); font-weight: 500; }
+
+.nl-badge-brand { font-weight: 750; }
+------MultipartBoundary--I7NqLRImhFd7mhoAvQzivryMgWYk4qW46mScyYoIB7------

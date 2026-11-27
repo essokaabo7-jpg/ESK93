@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>ESK93</title>
+<meta name="description" content="ESK93 : achète et vends facilement. Crée ton compte gratuit en 1 minute.">
+<meta property="og:title" content="ESK93 — Achète et vends facilement">
+<meta property="og:description" content="Publie tes articles, discute en privé avec les vendeurs et trouve de bonnes affaires.">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#2a47f5">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" href="icon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="icon-192.png">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,800&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#eef0f3;--card:#fff;--ink:#12161d;--mut:#5d6675;--line:#d9dde4;--acc:#2a47f5;--on:#fff;--ok:#12805c;--warn:#a65b00}
+@media (prefers-color-scheme:dark){:root{--bg:#0e1116;--card:#171b23;--ink:#eef1f6;--mut:#98a2b3;--line:#2a303b;--acc:#7b91ff;--on:#0e1116;--ok:#4cd6a2;--warn:#ffb454}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:"Bricolage Grotesque",system-ui,sans-serif;padding-bottom:84px}
+header{position:sticky;top:0;background:var(--bg);z-index:10;padding:14px 16px 8px;display:flex;align-items:baseline;justify-content:space-between;gap:10px}
+.logo{font-weight:800;font-size:1.9rem;letter-spacing:-.04em}.logo i{font-style:normal;color:var(--acc)}
+header span{color:var(--mut);font-size:.9rem;text-align:right}
+a{color:var(--acc)}
+main{max-width:760px;margin:0 auto;padding:0 16px}
+input,select,textarea,button{font:inherit;color:inherit}
+.in{width:100%;background:var(--card);border:1.5px solid var(--line);border-radius:10px;padding:12px;margin-top:6px}
+.in:focus-visible,button:focus-visible,[role=button]:focus-visible{outline:3px solid var(--acc);outline-offset:2px}
+.row{display:flex;gap:8px}.row>*{flex:1}
+.chips{display:flex;gap:8px;overflow-x:auto;padding:10px 0}
+.chip{flex:none;border:1.5px solid var(--line);background:var(--card);border-radius:999px;padding:7px 14px;cursor:pointer}
+.chip.on{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
+@media(min-width:620px){.grid{grid-template-columns:repeat(3,1fr)}}
+.card{background:var(--card);border-radius:14px;overflow:hidden;cursor:pointer;border:1px solid var(--line)}
+.tile{height:150px;display:flex;align-items:center;justify-content:center;font-size:2.6rem;font-weight:800;background:var(--line);color:var(--mut)}
+.info{padding:10px 12px 12px}
+.info h3{margin:0 0 4px;font-size:1rem;font-weight:600;line-height:1.2;overflow-wrap:anywhere}
+.pr{font-weight:800;font-size:1.1rem}.mu{color:var(--mut);font-size:.85rem}
+.badge{display:inline-block;background:var(--ok);color:var(--on);border-radius:6px;padding:2px 8px;font-size:.8rem;font-weight:600}
+.badge.w{background:var(--warn)}.badge.g{background:var(--mut)}
+.btn{background:var(--acc);color:var(--on);border:0;border-radius:12px;padding:14px;font-weight:600;cursor:pointer;width:100%}
+.btn.alt{background:transparent;color:var(--ink);border:1.5px solid var(--line)}
+.btn:disabled{opacity:.45;cursor:default}
+.item{display:flex;gap:12px;align-items:center;background:var(--card);border:1px solid var(--line);border-radius:14px;padding:10px;margin-bottom:10px}
+.item .tile{width:64px;height:64px;font-size:1.6rem;border-radius:10px;flex:none}
+.item .info{flex:1;padding:0;min-width:0}.item .acts{display:flex;flex-direction:column;gap:6px}
+.sm{background:none;border:1.5px solid var(--line);border-radius:8px;padding:6px 10px;cursor:pointer;font-size:.85rem}
+h2{margin:6px 0 12px;font-size:1.4rem;letter-spacing:-.02em}
+label{display:block;margin-bottom:12px;font-weight:600;font-size:.9rem}
+.empty{text-align:center;color:var(--mut);padding:40px 10px;line-height:1.5}
+.note{background:var(--card);border:1px dashed var(--line);border-radius:12px;padding:12px;color:var(--mut);font-size:.9rem;margin:10px 0;line-height:1.45}
+nav{position:fixed;left:0;right:0;bottom:0;background:var(--card);border-top:1px solid var(--line);display:flex;padding:8px 6px calc(8px + env(safe-area-inset-bottom,0px));z-index:10}
+nav button{flex:1;background:none;border:0;padding:6px 4px;cursor:pointer;color:var(--mut);font-size:.72rem;display:flex;flex-direction:column;align-items:center;gap:3px}
+nav .ic{position:relative;display:block;height:26px}
+nav svg,.ib svg{width:25px;height:25px;stroke:currentColor;fill:none;stroke-width:1.9;stroke-linecap:round;stroke-linejoin:round}
+nav .dot{position:absolute;top:-4px;right:-10px;background:var(--warn);color:var(--on);font-style:normal;font-size:.65rem;font-weight:800;min-width:17px;height:17px;border-radius:9px;display:flex;align-items:center;justify-content:center;padding:0 4px}
+nav button.on{color:var(--acc);font-weight:800}
+#sheet{position:fixed;inset:0;background:rgba(0,0,0,.55);z-index:30;display:flex;align-items:flex-end;justify-content:center}
+.sh{background:var(--bg);width:100%;max-width:560px;border-radius:20px 20px 0 0;padding:16px 16px calc(16px + env(safe-area-inset-bottom,0px));max-height:92%;overflow:auto}
+.sh .tile{height:170px;border-radius:14px;margin-bottom:12px;font-size:4rem}
+#ml{max-height:46vh;overflow:auto;margin:10px 0;display:flex;flex-direction:column}
+.bub{max-width:82%;padding:8px 12px;border-radius:14px;margin:4px 0;background:var(--card);border:1px solid var(--line);overflow-wrap:anywhere}
+.bub.me{margin-left:auto;background:var(--acc);color:var(--on);border:0}
+.bub small{display:block;opacity:.7;font-size:.7rem}
+#toast{position:fixed;left:50%;bottom:96px;transform:translateX(-50%);background:var(--ink);color:var(--bg);padding:10px 18px;border-radius:999px;z-index:40;font-weight:600;max-width:90%;text-align:center}
+#zoom{position:fixed;inset:0;background:rgba(0,0,0,.92);z-index:50;display:flex;align-items:center;justify-content:center;padding:12px;cursor:zoom-out}
+#zoom img{max-width:100%;max-height:100%;object-fit:contain}
+.big{width:100%;max-height:48vh;object-fit:contain;background:var(--line);border-radius:14px;display:block;cursor:zoom-in;margin-bottom:10px}
+.thumbs{display:flex;gap:8px;margin:0 0 12px;flex-wrap:wrap}
+.thumbs img{width:64px;height:64px;object-fit:cover;border-radius:8px;border:2px solid var(--line);cursor:pointer}
+.thumbs img.on{border-color:var(--acc)}
+.av{width:40px;height:40px;border-radius:50%;object-fit:cover;background:var(--line);display:flex;align-items:center;justify-content:center;font-weight:800;color:var(--mut);flex:none}
+.av.lg{width:84px;height:84px;font-size:2rem}.av.sm{width:28px;height:28px;font-size:.85rem}
+.hd{display:flex;align-items:center;gap:8px}#who{display:flex;align-items:center;gap:6px}
+.ib{background:none;border:0;padding:6px;cursor:pointer;color:var(--ink);display:flex}
+.hide{display:none!important}
+</style>
+</head>
+<body>
+<header><div class="logo">ESK<i>93</i></div><div class="hd"><span id="who"></span><button class="ib" data-a="shareapp" aria-label="Partager ESK93"><svg viewBox="0 0 24 24"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 10.5l6.8-4M8.6 13.5l6.8 4"/></svg></button></div></header>
+<main id="m"><div class="empty">Chargement…</div></main>
+<nav id="nav"></nav>
+<div id="sheet" class="hide"></div>
+<div id="zoom" class="hide" data-a="zoomx"></div>
+<div id="toast" class="hide" role="status"></div>
+
+<script type="module">
+import {initializeApp} from "https://www.gstatic.com/firebasejs/10.14.1/firebase-app.js";
+import {getAuth,onAuthStateChanged,createUserWithEmailAndPassword,signInWithEmailAndPassword,signOut,sendEmailVerification,sendPasswordResetEmail,updateProfile} from "https://www.gstatic.com/firebasejs/10.14.1/firebase-auth.js";
+import {getFirestore,collection,doc,getDoc,setDoc,addDoc,updateDoc,deleteDoc,onSnapshot,query,where,orderBy,limit} from "https://www.gstatic.com/firebasejs/10.14.1/firebase-firestore.js";
+
+/* ============ 1. Configuration Firebase du projet esk93-c7a19 ============ */
+const firebaseConfig = {
+  apiKey: "AIzaSyAgM1-JdCNqP8fNz2IoEIdk0LavLuXetEo",
+  authDomain: "esk93-c7a19.firebaseapp.com",
+  projectId: "esk93-c7a19",
+  storageBucket: "esk93-c7a19.firebasestorage.app",
+  messagingSenderId: "137489171242",
+  appId: "1:137489171242:web:3a92d94727e1cb46dcd453"
+};
+/* ================================================================================== */
+
+const FEE = 0.05, PHONE = '+237 653 423 053';
+const CATS = ['Tech','Mode','Maison','Sport','Loisirs','Autre'];
+const ETATS = ['Neuf','Très bon état','Bon état','À réparer'];
+const $ = id => document.getElementById(id);
+const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const fc = n => Math.round(n).toLocaleString('fr-FR') + ' FCFA';
+const toast = t => { const o = $('toast'); o.textContent = t; o.classList.remove('hide'); clearTimeout(toast.h); toast.h = setTimeout(() => o.classList.add('hide'), 3200); };
+
+const okImg = s => /^data:image\/jpeg;base64,[A-Za-z0-9+\/=]+$/.test(s);
+const ICON = {
+  search: '<svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg>',
+  plus: '<svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 8v8M8 12h8"/></svg>',
+  chat: '<svg viewBox="0 0 24 24"><path d="M21 12a8 8 0 0 1-11.6 7.1L4 20l1-4.6A8 8 0 1 1 21 12z"/></svg>',
+  user: '<svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4.4 3.6-7 8-7s8 2.6 8 7"/></svg>'
+};
+const avatarHtml = (name, photo, cls) => photo && okImg(photo) ? `<img class="av ${cls}" src="${photo}" alt="">` : `<div class="av ${cls}">${esc((name || '?').charAt(0).toUpperCase())}</div>`;
+const baseUrl = () => location.origin + location.pathname;
+async function share(url, text) {
+  if (navigator.share) { try { await navigator.share({ title: 'ESK93', text, url }); return; } catch (e) { if (e.name === 'AbortError') return; } }
+  const u = encodeURIComponent(url), t = encodeURIComponent(text + ' ' + url), b = 'style="text-align:center;text-decoration:none;display:block"';
+  $('sheet').innerHTML = `<div class="sh" role="dialog" aria-modal="true"><h2 style="margin:0">Partager</h2><p class="mu" style="overflow-wrap:anywhere">${esc(url)}</p><div class="row" style="margin-bottom:8px"><a class="btn" ${b} target="_blank" rel="noopener" href="https://wa.me/?text=${t}">WhatsApp</a><a class="btn alt" ${b} target="_blank" rel="noopener" href="https://www.facebook.com/sharer/sharer.php?u=${u}">Facebook</a></div><div class="row"><a class="btn alt" ${b} href="sms:?&body=${t}">SMS</a><button class="btn alt" data-a="copy" data-v="${esc(url)}">Copier le lien</button></div><button class="sm" style="margin-top:12px;width:100%" data-a="close">Fermer</button></div>`;
+  $('sheet').classList.remove('hide');
+}
+async function paySheet() {
+  let d = {}; try { d = (await getDoc(doc(db, 'users', U.uid, 'private', 'info'))).data() || {}; } catch {}
+  $('sheet').innerHTML = `<div class="sh" role="dialog" aria-modal="true"><h2 style="margin:0">Mon retrait Mobile Money</h2><p class="mu">Enregistre l’opérateur et le numéro sur lesquels tu veux recevoir ton argent. Les paiements en ligne ne sont pas encore actifs : ces informations restent privées.</p><label>Opérateur<select id="po" class="in"><option>MTN Mobile Money</option><option>Orange Money</option></select></label><label>Numéro<input id="pp" class="in" type="tel" value="${esc(d.payPhone || d.phone || '')}"></label><button class="btn" data-a="paysave">Enregistrer</button><button class="sm" style="margin-top:12px;width:100%" data-a="close">Fermer</button></div>`;
+  if (d.payOp) $('po').value = d.payOp;
+  $('sheet').classList.remove('hide');
+}
+
+if (firebaseConfig.apiKey === 'COLLE_ICI') {
+  $('m').innerHTML = '<div class="note"><b>Configuration manquante.</b><br>Ouvre <code>public/index.html</code> et remplace les valeurs « COLLE_ICI » par la configuration de ton projet Firebase (voir README.md, étape 3).</div>';
+  $('nav').classList.add('hide');
+  throw new Error('Firebase non configuré');
+}
+
+const app = initializeApp(firebaseConfig), auth = getAuth(app), db = getFirestore(app);
+
+let U = null, ME = null, ADMIN = false, items = [], chats = [], sales = [], ratings = [], reads = {};
+let fullImgs = {}, avatars = {}, openId = null, lim = 60, itemsUnsub = null, pendingOpen = (location.hash.match(/^#a=([A-Za-z0-9]+)$/) || [])[1] || null;
+let V = 'home', authMode = 'login', cat = 'Tout', q = '', sub = 'ann', cur = null, unChat = null, msgs = [], photos = [], subs = [], chatsReady = false, loaded = false;
+
+/* ---------- utilitaires ---------- */
+const gi = id => items.find(i => i.id === id);
+const imgs = i => (fullImgs[i.id] || (i.thumb ? [i.thumb] : (i.imgs || (i.img ? [i.img] : [])))).filter(okImg);
+const tile = i => { const t = i.thumb || imgs(i)[0]; return t && okImg(t) ? `<div class="tile" style="background:url(${t}) center/cover"></div>` : `<div class="tile">${esc((i.t || '?').charAt(0).toUpperCase())}</div>`; };
+const stat = i => i.status === 'sold' ? `<span class="badge g">${i.deliv === 2 ? 'Reçu par l’acheteur' : i.deliv === 1 ? 'Livré' : 'Vendu'}</span>` : i.status === 'pending' ? '<span class="badge w">Réservé</span>' : '<span class="badge">En ligne</span>';
+const avg = id => { const r = ratings.filter(x => x.sellerId === id); if (!r.length) return ''; return '★ ' + (r.reduce((s, x) => s + x.stars, 0) / r.length).toFixed(1).replace('.', ',') + ` (${r.length} avis)`; };
+const mineChats = () => chats.filter(c => c.lastFrom).sort((a, b) => b.ts - a.ts);
+const isNew = c => c.lastFrom && c.lastFrom !== U.uid && c.ts > (reads[c.id] || 0);
+const unread = () => U ? mineChats().filter(isNew).length : 0;
+async function run(fn, ok) {
+  try { await fn(); if (ok) toast(ok); return true; }
+  catch (e) { console.error(e); toast(e.code === 'permission-denied' ? (U && !U.emailVerified ? 'Vérifie d’abord ton e-mail (lien reçu par mail).' : 'Action refusée.') : 'Erreur, réessaie dans un instant.'); return false; }
+}
+function authErr(e) {
+  const m = { 'auth/invalid-credential': 'E-mail ou mot de passe incorrect.', 'auth/invalid-email': 'E-mail invalide.', 'auth/email-already-in-use': 'Cet e-mail a déjà un compte.', 'auth/weak-password': 'Mot de passe trop court (6 caractères minimum).', 'auth/too-many-requests': 'Trop d’essais, réessaie plus tard.', 'auth/network-request-failed': 'Pas de connexion internet.' };
+  toast(m[e.code] || 'Erreur de connexion.');
+}
+
+/* ---------- navigation ---------- */
+function nav() {
+  const n = unread();
+  document.title = (n ? `(${n}) ` : '') + 'ESK93';
+  const T = [['home', 'Explorer', ICON.search], ['sell', 'Vendre', ICON.plus], ['msgs', 'Messages', ICON.chat], [U ? 'me' : 'auth', U ? 'Compte' : 'Connexion', ICON.user]];
+  $('nav').innerHTML = T.map(t => `<button data-a="tab" data-v="${t[0]}" class="${V === t[0] ? 'on' : ''}" aria-label="${t[1]}"><span class="ic">${t[2]}${t[0] === 'msgs' && n ? `<i class="dot">${n}</i>` : ''}</span>${t[1]}</button>`).join('');
+  $('who').innerHTML = U && ME ? avatarHtml(ME.name, ME.photo, 'sm') + '<span>' + esc(ME.name) + '</span>' : '';
+}
+function verifyNote() {
+  return U && !U.emailVerified ? '<div class="note">Vérifie ton e-mail pour pouvoir publier des annonces : ouvre le lien reçu par mail.<br><button class="sm" data-a="resend">Renvoyer l’e-mail</button> <button class="sm" data-a="reload">J’ai vérifié</button></div>' : '';
+}
+function view() {
+  nav();
+  if (!U && ['sell', 'msgs', 'me'].includes(V)) V = 'auth';
+  if (U && V === 'auth') V = 'home';
+  if (V === 'auth') return authView();
+  if (U && !ME) return profileView();
+  ({ home, sell, msgs: msgsV, me })[V]();
+}
+function refresh() { nav(); if (V === 'home') list(); else if (V === 'msgs' || V === 'me') view(); }
+
+/* ---------- connexion / inscription ---------- */
+function authView() {
+  const su = authMode === 'signup';
+  $('m').innerHTML = `<h2>${su ? 'Créer mon compte' : 'Connexion'}</h2>` +
+    (su ? '<label>Nom ou pseudo<input id="a1" class="in" maxlength="40" autocomplete="name"></label>' : '') +
+    '<label>E-mail<input id="a2" class="in" type="email" autocomplete="email"></label>' +
+    (su ? '<label>Téléphone Mobile Money (facultatif)<input id="a4" class="in" type="tel" autocomplete="tel"></label>' : '') +
+    `<label>Mot de passe<input id="a3" class="in" type="password" autocomplete="${su ? 'new' : 'current'}-password"></label>` +
+    `<button class="btn" data-a="${su ? 'signup' : 'login'}">${su ? 'S’inscrire' : 'Se connecter'}</button>` +
+    `<p class="mu" style="text-align:center">${su ? 'Déjà un compte ? <a href="#" data-a="mode" data-v="login">Connexion</a>' : 'Pas encore de compte ? <a href="#" data-a="mode" data-v="signup">Créer un compte</a><br><br><a href="#" data-a="reset">Mot de passe oublié</a>'}</p>`;
+}
+function profileView() {
+  $('m').innerHTML = '<h2>Termine ton profil</h2><label>Nom ou pseudo<input id="p1" class="in" maxlength="40"></label><button class="btn" data-a="profile">Enregistrer</button>';
+}
+
+/* ---------- explorer ---------- */
+function list() {
+  const r = items.filter(i => i.status !== 'sold' && (cat === 'Tout' || i.c === cat) && String(i.t).toLowerCase().includes(q.toLowerCase()));
+  $('g').innerHTML = r.length ? r.map(i => `<div class="card" role="button" tabindex="0" data-a="open" data-id="${esc(i.id)}">${tile(i)}<div class="info"><h3>${esc(i.t)}</h3><div class="pr">${fc(i.p)}</div><div class="mu">${esc(i.s)} · ${esc(i.sellerName)}${avg(i.sellerId) ? ' · ' + avg(i.sellerId) : ''}</div>${i.status === 'pending' ? '<span class="badge w">Réservé</span>' : ''}</div></div>`).join('')
+    : `<div class="empty" style="grid-column:1/-1">${loaded ? (items.length ? 'Aucun article ne correspond.' : 'Aucune annonce pour l’instant.<br>Sois le premier à mettre un article en vente !') : 'Chargement des annonces…'}</div>`;
+  if (items.length >= lim) $('g').insertAdjacentHTML('beforeend', '<button class="btn alt" style="grid-column:1/-1" data-a="more">Voir plus d’annonces</button>');
+}
+function home() {
+  $('m').innerHTML = `<input id="q" class="in" placeholder="Rechercher un article" value="${esc(q)}" aria-label="Rechercher"><div class="chips">${['Tout', ...CATS].map(c => `<button class="chip${c === cat ? ' on' : ''}" data-a="cat" data-v="${c}">${c}</button>`).join('')}</div><div class="grid" id="g"></div>`;
+  list();
+}
+
+/* ---------- vendre ---------- */
+function sell() {
+  photos = [];
+  $('m').innerHTML = '<h2>Vendre un article</h2>' + verifyNote() +
+    '<label>Titre<input id="f1" class="in" maxlength="60" placeholder="Ex. : Casque audio"></label>' +
+    `<div class="row"><label>Prix (FCFA)<input id="f2" class="in" type="number" min="100" step="100" inputmode="numeric"></label><label>Catégorie<select id="f3" class="in">${CATS.map(c => `<option>${c}</option>`).join('')}</select></label></div>` +
+    `<label>État<select id="f4" class="in">${ETATS.map(c => `<option>${c}</option>`).join('')}</select></label>` +
+    '<label>Description<textarea id="f5" class="in" rows="4" maxlength="500" placeholder="Marque, taille, défauts, lieu de remise…"></textarea></label>' +
+    '<label>Photos (jusqu’à 3, facultatif)<input id="f6" class="in" type="file" accept="image/*" multiple></label><div class="thumbs" id="pv"></div>' +
+    `<div class="note">Commission de 5 % sur chaque vente : <b id="fp">0 FCFA</b> pour cet article. Elle est à envoyer au ${PHONE} une fois la vente confirmée.</div><button class="btn" data-a="publish">Publier l’annonce</button>`;
+}
+
+/* ---------- messages ---------- */
+function msgsV() {
+  const c = mineChats();
+  $('m').innerHTML = '<h2>Messages</h2>' + (c.length ? c.map(x => `<div class="item" role="button" tabindex="0" data-a="chat" data-cid="${esc(x.id)}"><div class="info"><h3>${esc(x.buyerId === U.uid ? x.sellerName : x.buyerName)} · ${esc(x.itemT)}</h3><div class="mu">Discussion privée</div>${isNew(x) ? '<span class="badge w">Nouveau message</span>' : ''}</div></div>`).join('') : '<div class="empty">Aucune discussion.<br>Ouvre une annonce et appuie sur « Écrire au vendeur ».</div>');
+}
+
+/* ---------- mon compte ---------- */
+function buyActs(i) {
+  if (i.status !== 'sold') return '';
+  if (!i.deliv) return '<div class="mu">En attente de livraison</div>';
+  if (i.deliv === 1) return `<button class="sm" data-a="recv" data-id="${esc(i.id)}">J’ai bien reçu</button>`;
+  const r = ratings.find(x => x.itemId === i.id && x.buyerId === U.uid);
+  if (r) return `<div class="mu">Ton avis : ${'★'.repeat(r.stars)}</div>`;
+  return '<div class="mu">Note le vendeur :</div><div class="row">' + [1, 2, 3, 4, 5].map(n => `<button class="sm" data-a="rate" data-id="${esc(i.id)}" data-n="${n}">${n}★</button>`).join('') + '</div>';
+}
+function profileBlock() {
+  return `<div class="item"><label for="ph" style="margin:0;cursor:pointer" aria-label="Changer ma photo de profil">${avatarHtml(ME.name, ME.photo, 'lg')}</label><input id="ph" type="file" accept="image/*" class="hide"><div class="info"><h3 style="font-size:1.2rem">${esc(ME.name)}</h3><div class="mu">${esc(U.email || '')}</div><div class="row" style="margin-top:8px;gap:6px"><label for="ph" class="sm" style="margin:0;cursor:pointer;flex:none;font-weight:400">Changer la photo</label><button class="sm" style="flex:none" data-a="logout">Déconnexion</button></div></div></div><div class="row"><button class="btn alt" data-a="shareapp">Inviter des amis</button><button class="btn alt" data-a="paysettings">Mon retrait Mobile Money</button></div>`;
+}
+function me() {
+  const mine = items.filter(i => i.sellerId === U.uid), buys = items.filter(i => i.buyerId === U.uid && i.sellerId !== U.uid), sl = sales.filter(s => s.sellerId === U.uid);
+  const tabs = [['ann', `Annonces (${mine.length})`], ['ach', `Achats (${buys.length})`], ['ven', `Ventes (${sl.length})`], ...(ADMIN ? [['adm', 'Commissions']] : [])];
+  let h = `${profileBlock()}${verifyNote()}<div class="chips">${tabs.map(t => `<button class="chip${sub === t[0] ? ' on' : ''}" data-a="sub" data-v="${t[0]}">${t[1]}</button>`).join('')}</div>`;
+  if (sub === 'ann') h += mine.length ? mine.map(i => `<div class="item">${tile(i)}<div class="info"><h3>${esc(i.t)}</h3><div class="pr">${fc(i.p)}</div>${stat(i)}${i.status === 'pending' ? `<div class="mu">Acheteur : ${esc(i.buyerName)}</div>` : ''}</div><div class="acts">` +
+      (i.status !== 'sold' ? `<button class="sm" data-a="sellask" data-id="${esc(i.id)}">Confirmer la vente</button>` : (i.deliv ? '' : `<button class="sm" data-a="deliv" data-id="${esc(i.id)}">Marquer livré</button>`) + (i.buyerId ? '' : `<button class="sm" data-a="relist" data-id="${esc(i.id)}">Remettre en ligne</button>`)) +
+      `<button class="sm" data-a="open" data-id="${esc(i.id)}">Voir</button><button class="sm" data-a="del" data-id="${esc(i.id)}">Supprimer</button></div></div>`).join('') : '<div class="empty">Tu n’as encore rien mis en vente.</div>';
+  else if (sub === 'ach') h += buys.length ? buys.map(i => `<div class="item">${tile(i)}<div class="info"><h3>${esc(i.t)}</h3><div class="pr">${fc(i.finalPrice || i.p)}</div>${i.status === 'sold' ? '<span class="badge">Acheté</span>' : '<span class="badge w">Demande envoyée</span>'}<div class="mu">Vendeur : ${esc(i.sellerName)}</div>${buyActs(i)}</div></div>`).join('') : '<div class="empty">Aucun achat pour le moment.</div>';
+  else if (sub === 'ven') h += sl.length ? sl.map(s => `<div class="item"><div class="info"><h3>${esc(s.t)}</h3><div class="pr">${fc(s.price)}</div><div class="mu">Commission 5 % : ${fc(s.fee)}</div>${s.paid ? '<span class="badge">Commission reçue</span>' : `<span class="badge w">À envoyer au ${PHONE}</span>`}</div></div>`).join('') : '<div class="empty">Aucune vente confirmée.</div>';
+  else { const due = sales.filter(s => !s.paid).reduce((a, s) => a + s.fee, 0); h += `<div class="note">Commissions à recevoir : <b>${fc(due)}</b> sur le ${PHONE}.</div>` + (sales.length ? [...sales].sort((a, b) => b.ts - a.ts).map(s => `<div class="item"><div class="info"><h3>${esc(s.t)}</h3><div class="mu">Vendeur : ${esc(s.sellerName)} · Acheteur : ${esc(s.buyerName || '—')}</div><div class="pr">${fc(s.fee)}</div></div><button class="sm" data-a="paid" data-id="${esc(s.id)}">${s.paid ? 'Reçue ✓' : 'Marquer reçue'}</button></div>`).join('') : '<div class="empty">Aucune vente.</div>'); }
+  $('m').innerHTML = h;
+}
+
+/* ---------- fiche annonce, galerie, zoom ---------- */
+function gallery(i) {
+  const g = imgs(i);
+  if (!g.length) return `<div class="tile">${esc((i.t || '?').charAt(0).toUpperCase())}</div>`;
+  return `<img id="big" class="big" data-a="zoom" src="${g[0]}" alt="${esc(i.t)}">` + (g.length > 1 ? '<div class="thumbs">' + g.map((s, k) => `<img data-a="thumb" data-id="${esc(i.id)}" data-v="${k}" class="${k ? '' : 'on'}" src="${s}" alt="Photo ${k + 1}">`).join('') + '</div>' : '');
+}
+function open(id, noLoad) {
+  const i = gi(id); if (!i) return; openId = id; setTimeout(() => extras(i, noLoad), 0); const mineI = U && i.sellerId === U.uid;
+  $('sheet').innerHTML = `<div class="sh" role="dialog" aria-modal="true">${gallery(i)}<h2 style="margin:0;overflow-wrap:anywhere">${esc(i.t)}</h2><div class="pr" style="font-size:1.6rem;margin:4px 0">${fc(i.finalPrice || i.p)}</div>${stat(i)}<div class="hd" style="margin:8px 0"><span id="sav">${avatarHtml(i.sellerName, avatars[i.sellerId], '')}</span><span class="mu">${esc(i.c)} · ${esc(i.s)} · Vendeur : ${esc(mineI ? 'toi' : i.sellerName)}${avg(i.sellerId) ? ' · ' + avg(i.sellerId) : ''}</span></div><p style="overflow-wrap:anywhere">${esc(i.d || 'Pas de description.')}</p>` +
+    (mineI ? '<div class="note">C’est ton annonce.</div>' : `<p class="mu">Paiement : à régler directement avec le vendeur (MTN MoMo, Orange Money ou en main propre). Le paiement en ligne n’est pas encore actif.</p><div class="row"><button class="btn alt" data-a="chatnew" data-id="${esc(i.id)}">Écrire au vendeur</button><button class="btn" data-a="buy" data-id="${esc(i.id)}"${i.status !== 'open' ? ' disabled' : ''}>${i.status === 'open' ? 'Acheter' : i.status === 'sold' ? 'Vendu' : 'Réservé'}</button></div>`) +
+    '<div class="row" style="margin-top:12px"><button class="sm" data-a="shareitem" data-id="' + esc(i.id) + '">Partager l’article</button><button class="sm" data-a="close">Fermer</button></div></div>';
+  $('sheet').classList.remove('hide');
+}
+function extras(i, noLoad) {
+  if (openId !== i.id || $('sheet').classList.contains('hide')) return;
+  if (!noLoad && i.thumb && !fullImgs[i.id]) getDoc(doc(db, 'itemImgs', i.id)).then(s => { if (s.exists()) { fullImgs[i.id] = s.data().imgs || []; if (openId === i.id && $('sav')) open(i.id, true); } }).catch(() => {});
+  if (!(i.sellerId in avatars)) getDoc(doc(db, 'users', i.sellerId)).then(s => { avatars[i.sellerId] = s.exists() ? (s.data().photo || null) : null; const e = $('sav'); if (e && openId === i.id) e.innerHTML = avatarHtml(i.sellerName, avatars[i.sellerId], ''); }).catch(() => {});
+}
+async function tryOpen() {
+  if (!pendingOpen) return; const id = pendingOpen; pendingOpen = null;
+  if (!gi(id)) { try { const s = await getDoc(doc(db, 'items', id)); if (s.exists()) items.push({ id, ...s.data() }); } catch {} }
+  if (gi(id)) open(id); else toast('Annonce introuvable ou supprimée');
+}
+function closeSheet() { $('sheet').classList.add('hide'); if (unChat) { unChat(); unChat = null; } cur = null; openId = null; if (location.hash) history.replaceState(null, '', location.pathname + location.search); }
+function sellAsk(id) {
+  const i = gi(id); if (!i) return; const p = i.finalPrice || i.p;
+  $('sheet').innerHTML = `<div class="sh" role="dialog" aria-modal="true"><h2 style="margin:0">Confirmer la vente</h2><p class="mu">${esc(i.t)}${i.buyerName ? ' · Acheteur : ' + esc(i.buyerName) : ''}</p><label>Prix final convenu (FCFA)<input id="sp" class="in" type="number" min="100" step="100" value="${p}"></label><div class="note">Commission de 5 % : <b id="sf">${fc(p * FEE)}</b><br>À envoyer au ${PHONE} (Mobile Money).</div><button class="btn" data-a="sellok" data-id="${esc(i.id)}">Confirmer la vente</button><button class="sm" style="margin-top:12px;width:100%" data-a="close">Annuler</button></div>`;
+  $('sheet').classList.remove('hide');
+}
+
+/* ---------- discussion privée ---------- */
+function drawMsgs() {
+  const l = $('ml'); if (!l) return;
+  l.innerHTML = msgs.length ? msgs.map(m => `<div class="bub${m.from === U.uid ? ' me' : ''}"><small>${m.from === U.uid ? 'Toi' : esc(cur.other)}</small>${esc(m.t)}</div>`).join('') : '<div class="mu">Écris le premier message.</div>';
+  l.scrollTop = l.scrollHeight;
+}
+function markRead(cid) { reads[cid] = Date.now(); setDoc(doc(db, 'users', U.uid, 'private', 'reads'), { m: reads }).catch(() => {}); }
+async function openChat(cid, meta) {
+  closeSheet();
+  const other = meta.buyerId === U.uid ? meta.sellerName : meta.buyerName;
+  cur = { cid, meta, other }; msgs = [];
+  if (meta.buyerId === U.uid) { try { await setDoc(doc(db, 'chats', cid), { ...meta, members: [meta.buyerId, meta.sellerId] }, { merge: true }); } catch (e) { toast('Impossible d’ouvrir la discussion.'); cur = null; return; } }
+  $('sheet').innerHTML = `<div class="sh" role="dialog" aria-modal="true"><h2 style="margin:0">${esc(other)}</h2><div class="mu">À propos de : ${esc(meta.itemT)}</div><div id="ml" aria-live="polite"></div><div class="row"><input id="mi" class="in" style="margin:0" placeholder="Ton message" maxlength="500" aria-label="Message"><button class="sm" data-a="send">Envoyer</button></div><button class="sm" style="margin-top:12px;width:100%" data-a="close">Fermer</button></div>`;
+  $('sheet').classList.remove('hide'); drawMsgs(); markRead(cid);
+  unChat = onSnapshot(query(collection(db, 'chats', cid, 'msgs'), orderBy('ts')), s => {
+    msgs = s.docs.map(d => d.data()); drawMsgs();
+    if (msgs.length && msgs[msgs.length - 1].from !== U.uid) markRead(cid);
+  }, () => toast('Messages indisponibles pour le moment.'));
+}
+function notify(x) {
+  if (!chatsReady) return;
+  x.forEach(c => { const o = chats.find(p => p.id === c.id); if (c.lastFrom && c.lastFrom !== U.uid && c.ts > (o ? o.ts : 0) && !(cur && cur.cid === c.id)) toast('Nouveau message de ' + (c.buyerId === U.uid ? c.sellerName : c.buyerName)); });
+}
+
+/* ---------- photos ---------- */
+function shrink(f, cb, max = 640, sq = false, qual = .6) {
+  const go = src => {
+    const im = new Image();
+    im.onload = () => {
+      const c = document.createElement('canvas'); let sx = 0, sy = 0, sw = im.width, sh = im.height;
+      if (sq) { const m = Math.min(sw, sh); sx = (sw - m) / 2; sy = (sh - m) / 2; sw = sh = m; }
+      const k = Math.min(1, max / Math.max(sw, sh)); c.width = Math.round(sw * k); c.height = Math.round(sh * k);
+      c.getContext('2d').drawImage(im, sx, sy, sw, sh, 0, 0, c.width, c.height); cb(c.toDataURL('image/jpeg', qual));
+    };
+    im.onerror = () => cb(null); im.src = src;
+  };
+  if (typeof f === 'string') return go(f);
+  const r = new FileReader(); r.onload = () => go(r.result); r.onerror = () => cb(null); r.readAsDataURL(f);
+}
+
+/* ---------- événements ---------- */
+document.addEventListener('input', e => {
+  const t = e.target;
+  if (t.id === 'q') { q = t.value; list(); }
+  if (t.id === 'f2') $('fp').textContent = fc((parseFloat(t.value) || 0) * FEE);
+  if (t.id === 'sp') $('sf').textContent = fc((parseFloat(t.value) || 0) * FEE);
+});
+document.addEventListener('change', e => {
+  if (e.target.id === 'ph') {
+    const f = e.target.files[0]; if (!f) return;
+    shrink(f, async d => { if (!d) return toast('Photo illisible'); if (await run(() => setDoc(doc(db, 'users', U.uid), { photo: d }, { merge: true }), 'Photo de profil mise à jour')) { ME = { ...ME, photo: d }; avatars[U.uid] = d; nav(); view(); } }, 256, true, .7);
+    return;
+  }
+  if (e.target.id !== 'f6') return;
+  photos = []; $('pv').innerHTML = '';
+  [...e.target.files].slice(0, 3).forEach(f => shrink(f, d => { if (d) { photos.push(d); $('pv').innerHTML = photos.map(s => `<img src="${s}" alt="Aperçu">`).join(''); } else toast('Photo illisible'); }));
+});
+document.addEventListener('keydown', e => {
+  if (e.key === 'Escape') closeSheet();
+  if (e.key === 'Enter' && e.target.id === 'mi') { e.preventDefault(); document.querySelector('[data-a=send]')?.click(); }
+  if ((e.key === 'Enter' || e.key === ' ') && e.target.getAttribute?.('role') === 'button') { e.preventDefault(); e.target.click(); }
+});
+document.addEventListener('click', async e => {
+  if (e.target.id === 'sheet') { closeSheet(); return; }
+  const el = e.target.closest('[data-a]'); if (!el) return;
+  const a = el.dataset.a, id = el.dataset.id, v = el.dataset.v;
+  if (el.tagName === 'A') e.preventDefault();
+  const needLogin = () => { if (U) return false; closeSheet(); V = 'auth'; authMode = 'login'; view(); toast('Connecte-toi pour continuer'); return true; };
+
+  if (a === 'tab') { V = v; closeSheet(); view(); scrollTo(0, 0); }
+  else if (a === 'cat') { cat = v; home(); }
+  else if (a === 'sub') { sub = v; me(); }
+  else if (a === 'open') open(id);
+  else if (a === 'close') closeSheet();
+  else if (a === 'mode') { authMode = v; authView(); }
+  else if (a === 'signup') {
+    const n = $('a1').value.trim(), em = $('a2').value.trim(), pw = $('a3').value, ph = $('a4').value.trim();
+    if (n.length < 2) return toast('Entre ton nom');
+    try {
+      const c = await createUserWithEmailAndPassword(auth, em, pw);
+      await updateProfile(c.user, { displayName: n });
+      await setDoc(doc(db, 'users', c.user.uid), { name: n, createdAt: Date.now() });
+      await setDoc(doc(db, 'users', c.user.uid, 'private', 'info'), { email: em, phone: ph });
+      await sendEmailVerification(c.user).catch(() => {});
+      toast('Compte créé ! Vérifie ta boîte mail.');
+    } catch (err) { authErr(err); }
+  }
+  else if (a === 'login') { try { await signInWithEmailAndPassword(auth, $('a2').value.trim(), $('a3').value); } catch (err) { authErr(err); } }
+  else if (a === 'reset') { const em = $('a2').value.trim(); if (!em) return toast('Entre ton e-mail d’abord'); try { await sendPasswordResetEmail(auth, em); toast('E-mail de réinitialisation envoyé'); } catch (err) { authErr(err); } }
+  else if (a === 'logout') { await signOut(auth); V = 'home'; }
+  else if (a === 'resend') { try { await sendEmailVerification(auth.currentUser); toast('E-mail renvoyé'); } catch { toast('Réessaie dans quelques minutes'); } }
+  else if (a === 'reload') { await auth.currentUser.reload(); await auth.currentUser.getIdToken(true); U = auth.currentUser; view(); toast(U.emailVerified ? 'E-mail vérifié !' : 'Pas encore vérifié'); }
+  else if (a === 'profile') { const n = $('p1').value.trim(); if (n.length < 2) return toast('Entre ton nom'); if (await run(() => setDoc(doc(db, 'users', U.uid), { name: n, createdAt: Date.now() }))) { ME = { name: n }; view(); } }
+  else if (a === 'publish') {
+    if (!U.emailVerified) return toast('Vérifie d’abord ton e-mail');
+    const t = $('f1').value.trim(), p = parseFloat($('f2').value);
+    if (!t) { toast('Ajoute un titre'); return $('f1').focus(); }
+    if (!(p >= 100)) { toast('Indique un prix en FCFA (100 minimum)'); return $('f2').focus(); }
+    const o = { t, p, c: $('f3').value, s: $('f4').value, d: $('f5').value.trim(), status: 'open', sellerId: U.uid, sellerName: ME.name, ts: Date.now() };
+    if (photos.length) o.thumb = await new Promise(r => shrink(photos[0], r, 240, false, .55));
+    const ref = doc(collection(db, 'items'));
+    if (await run(async () => { await setDoc(ref, o); if (photos.length) await setDoc(doc(db, 'itemImgs', ref.id), { sellerId: U.uid, imgs: photos }); }, 'Annonce en ligne !')) { if (photos.length) fullImgs[ref.id] = photos; if (!gi(ref.id)) items.unshift({ id: ref.id, ...o }); V = 'home'; cat = 'Tout'; q = ''; view(); open(ref.id); }
+  }
+  else if (a === 'del') { $('sheet').innerHTML = `<div class="sh" role="dialog" aria-modal="true"><h2 style="margin:0">Supprimer cette annonce ?</h2><p class="mu">Elle disparaîtra pour tout le monde.</p><button class="btn" data-a="delok" data-id="${esc(id)}">Oui, supprimer</button><button class="sm" style="margin-top:12px;width:100%" data-a="close">Annuler</button></div>`; $('sheet').classList.remove('hide'); }
+  else if (a === 'delok') { closeSheet(); run(async () => { await deleteDoc(doc(db, 'items', id)); await deleteDoc(doc(db, 'itemImgs', id)).catch(() => {}); }, 'Annonce supprimée'); }
+  else if (a === 'relist') run(async () => { await updateDoc(doc(db, 'items', id), { status: 'open', deliv: 0, finalPrice: null, buyerId: null, buyerName: null }); await deleteDoc(doc(db, 'sales', id)); }, 'Annonce remise en ligne');
+  else if (a === 'buy') {
+    if (needLogin()) return;
+    const i = gi(id); if (!i || i.status !== 'open') return;
+    if (await run(() => updateDoc(doc(db, 'items', id), { status: 'pending', buyerId: U.uid, buyerName: ME.name }), 'Demande envoyée au vendeur')) openChat(id + '_' + U.uid, { itemId: id, itemT: i.t, buyerId: U.uid, buyerName: ME.name, sellerId: i.sellerId, sellerName: i.sellerName });
+  }
+  else if (a === 'chatnew') { if (needLogin()) return; const i = gi(id); if (i) openChat(id + '_' + U.uid, { itemId: id, itemT: i.t, buyerId: U.uid, buyerName: ME.name, sellerId: i.sellerId, sellerName: i.sellerName }); }
+  else if (a === 'chat') { const c = chats.find(x => x.id === el.dataset.cid); if (c) openChat(c.id, { itemId: c.itemId, itemT: c.itemT, buyerId: c.buyerId, buyerName: c.buyerName, sellerId: c.sellerId, sellerName: c.sellerName }); }
+  else if (a === 'send') {
+    const inp = $('mi'), tx = inp.value.trim(); if (!tx || !cur) return;
+    const cc = cur, ts = Date.now(); inp.value = '';
+    run(async () => { await addDoc(collection(db, 'chats', cc.cid, 'msgs'), { from: U.uid, t: tx, ts }); await setDoc(doc(db, 'chats', cc.cid), { lastFrom: U.uid, ts }, { merge: true }); });
+  }
+  else if (a === 'sellask') sellAsk(id);
+  else if (a === 'sellok') {
+    const it = gi(id), pr = parseFloat($('sp').value); if (!it || !(pr >= 100)) return toast('Prix invalide');
+    const fee = Math.round(pr * FEE);
+    if (await run(async () => { await updateDoc(doc(db, 'items', id), { status: 'sold', finalPrice: pr }); await setDoc(doc(db, 'sales', id), { itemId: id, t: it.t, price: pr, fee, sellerId: U.uid, sellerName: ME.name, buyerId: it.buyerId || '', buyerName: it.buyerName || '', ts: Date.now(), paid: false }); }, 'Vente confirmée. Commission : ' + fc(fee))) { closeSheet(); sub = 'ven'; V = 'me'; view(); }
+  }
+  else if (a === 'paid') { const s = sales.find(x => x.id === id); if (s) run(() => updateDoc(doc(db, 'sales', id), { paid: !s.paid })); }
+  else if (a === 'deliv') run(() => updateDoc(doc(db, 'items', id), { deliv: 1 }), 'Marqué comme livré');
+  else if (a === 'recv') run(() => updateDoc(doc(db, 'items', id), { deliv: 2 }), 'Réception confirmée');
+  else if (a === 'rate') { const i = gi(id); if (i) run(() => setDoc(doc(db, 'ratings', id), { itemId: id, sellerId: i.sellerId, buyerId: U.uid, stars: +el.dataset.n, ts: Date.now() }), 'Merci pour ton avis !'); }
+  else if (a === 'thumb') { const g = imgs(gi(id) || {}); if (g[v]) { $('big').src = g[v]; [...el.parentNode.children].forEach(x => x.classList.toggle('on', x === el)); } }
+  else if (a === 'zoom') { $('zoom').innerHTML = `<img src="${$('big').src}" alt="Photo agrandie">`; $('zoom').classList.remove('hide'); }
+  else if (a === 'zoomx') $('zoom').classList.add('hide');
+  else if (a === 'shareapp') share(baseUrl(), 'Rejoins-moi sur ESK93 : achète et vends facilement !');
+  else if (a === 'shareitem') { const i = gi(id); if (i) share(baseUrl() + '#a=' + id, `${i.t} — ${fc(i.p)} sur ESK93`); }
+  else if (a === 'copy') { try { await navigator.clipboard.writeText(v); toast('Lien copié'); } catch { toast('Copie impossible : sélectionne le lien'); } }
+  else if (a === 'more') { lim += 60; subItems(); }
+  else if (a === 'paysettings') { if (U) paySheet(); }
+  else if (a === 'paysave') { const op = $('po').value, ph = $('pp').value.trim(); if (await run(() => setDoc(doc(db, 'users', U.uid, 'private', 'info'), { payOp: op, payPhone: ph }, { merge: true }), 'Informations enregistrées')) closeSheet(); }
+});
+
+/* ---------- données en direct ---------- */
+const err = () => toast('Connexion aux données impossible.');
+function subItems() { if (itemsUnsub) itemsUnsub(); itemsUnsub = onSnapshot(query(collection(db, 'items'), orderBy('ts', 'desc'), limit(lim)), s => { items = s.docs.map(d => ({ id: d.id, ...d.data() })); loaded = true; refresh(); tryOpen(); }, err); }
+subItems();
+addEventListener('hashchange', () => { pendingOpen = (location.hash.match(/^#a=([A-Za-z0-9]+)$/) || [])[1] || null; tryOpen(); });
+if ('serviceWorker' in navigator) navigator.serviceWorker.register('sw.js').catch(() => {});
+onSnapshot(collection(db, 'ratings'), s => { ratings = s.docs.map(d => ({ id: d.id, ...d.data() })); refresh(); }, () => {});
+
+onAuthStateChanged(auth, async u => {
+  subs.forEach(f => f()); subs = []; U = u; ME = null; ADMIN = false; chats = []; sales = []; reads = {}; chatsReady = false;
+  if (u) {
+    try { const p = await getDoc(doc(db, 'users', u.uid)); ME = p.exists() ? p.data() : null; } catch {}
+    try { ADMIN = (await getDoc(doc(db, 'admins', u.uid))).exists(); } catch {}
+    try { const r = await getDoc(doc(db, 'users', u.uid, 'private', 'reads')); reads = r.exists() ? (r.data().m || {}) : {}; } catch {}
+    subs.push(onSnapshot(query(collection(db, 'chats'), where('members', 'array-contains', u.uid)), s => {
+      const x = s.docs.map(d => ({ id: d.id, ...d.data() })); notify(x); chats = x; chatsReady = true; refresh();
+    }, () => {}));
+    subs.push(onSnapshot(ADMIN ? collection(db, 'sales') : query(collection(db, 'sales'), where('sellerId', '==', u.uid)), s => { sales = s.docs.map(d => ({ id: d.id, ...d.data() })); refresh(); }, () => {}));
+  } else { closeSheet(); }
+  view();
+});
+</script>
+</body>
+</html>

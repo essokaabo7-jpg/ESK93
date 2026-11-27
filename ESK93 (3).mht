@@ -1,0 +1,233 @@
+From: <Saved by Blink>
+Snapshot-Content-Location: https://essoka93.netlify.app/
+Subject: ESK93
+Date: Fri, 27 Nov 2026 10:00:45 GMT
+MIME-Version: 1.0
+Content-Type: multipart/related;
+	type="text/html";
+	boundary="----MultipartBoundary--VS99tOvoi1ZAFwmMp22jnl7w973MDo8lha2nwWzJoS----"
+
+
+------MultipartBoundary--VS99tOvoi1ZAFwmMp22jnl7w973MDo8lha2nwWzJoS----
+Content-Type: text/html
+Content-ID: <frame-60B6F7DF886FEB57BAEECDC82C3157E1@mhtml.blink>
+Content-Transfer-Encoding: binary
+Content-Location: https://essoka93.netlify.app/
+
+<!DOCTYPE html><html lang="fr"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><link rel="stylesheet" type="text/css" href="cid:css-51b92729-9e7b-4322-b859-18b9af8c65c5@mhtml.blink" />
+
+<!-- This site is hosted on Netlify. Anyone can build and deploy a site
+     like this one for free: https://netlify.new/?utm_campaign=loops&utm_source=ai-legible&utm_medium=owned&utm_content=comment&utm_id=ed17d151-5a1a-4bc8-bdf7-b341ece623d8
+     Netlify hosting facts for this site: static/SSR served via Netlify Edge. -->
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>ESK93</title>
+<meta name="description" content="ESK93 : achète et vends facilement. Crée ton compte gratuit en 1 minute.">
+<meta property="og:title" content="ESK93 — Achète et vends facilement">
+<meta property="og:description" content="Publie tes articles, discute en privé avec les vendeurs et trouve de bonnes affaires.">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#2a47f5">
+<link rel="manifest" href="https://essoka93.netlify.app/manifest.webmanifest">
+<link rel="icon" href="https://essoka93.netlify.app/icon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="https://essoka93.netlify.app/icon-192.png">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,800&amp;display=swap" rel="stylesheet">
+
+</head>
+<body>
+<header><div class="logo">ESK<i>93</i></div><div class="hd"><span id="who"></span><button class="ib" data-a="shareapp" aria-label="Partager ESK93"><svg viewBox="0 0 24 24"><circle cx="18" cy="5" r="3"></circle><circle cx="6" cy="12" r="3"></circle><circle cx="18" cy="19" r="3"></circle><path d="M8.6 10.5l6.8-4M8.6 13.5l6.8 4"></path></svg></button></div></header>
+<main id="m"><input id="q" class="in" placeholder="Rechercher un article" value="" aria-label="Rechercher"><div class="chips"><button class="chip on" data-a="cat" data-v="Tout">Tout</button><button class="chip" data-a="cat" data-v="Tech">Tech</button><button class="chip" data-a="cat" data-v="Mode">Mode</button><button class="chip" data-a="cat" data-v="Maison">Maison</button><button class="chip" data-a="cat" data-v="Sport">Sport</button><button class="chip" data-a="cat" data-v="Loisirs">Loisirs</button><button class="chip" data-a="cat" data-v="Autre">Autre</button></div><div class="grid" id="g"><div class="empty" style="grid-column:1/-1">Aucune annonce pour l’instant.<br>Sois le premier à mettre un article en vente !</div></div></main>
+<nav id="nav"><button data-a="tab" data-v="home" class="on" aria-label="Explorer"><span class="ic"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"></circle><path d="M21 21l-4.3-4.3"></path></svg></span>Explorer</button><button data-a="tab" data-v="sell" class="" aria-label="Vendre"><span class="ic"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"></circle><path d="M12 8v8M8 12h8"></path></svg></span>Vendre</button><button data-a="tab" data-v="msgs" class="" aria-label="Messages"><span class="ic"><svg viewBox="0 0 24 24"><path d="M21 12a8 8 0 0 1-11.6 7.1L4 20l1-4.6A8 8 0 1 1 21 12z"></path></svg></span>Messages</button><button data-a="tab" data-v="auth" class="" aria-label="Connexion"><span class="ic"><svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"></circle><path d="M4 21c0-4.4 3.6-7 8-7s8 2.6 8 7"></path></svg></span>Connexion</button></nav>
+<div id="sheet" class="hide"></div>
+<div id="zoom" class="hide" data-a="zoomx"></div>
+<div id="toast" class="hide" role="status"></div>
+
+
+
+
+<iframe ng-non-bindable="" frameborder="0" hspace="0" marginheight="0" marginwidth="0" scrolling="no" tabindex="-1" vspace="0" width="100%" aria-hidden="true" id="I0_1795773627307" name="I0_1795773627307" src="cid:frame-6202905F073929EDE1505EE6DD9B53C2@mhtml.blink" style="position: absolute; top: -100px; width: 1px; height: 1px;"></iframe></body></html>
+------MultipartBoundary--VS99tOvoi1ZAFwmMp22jnl7w973MDo8lha2nwWzJoS----
+Content-Type: text/css
+Content-Transfer-Encoding: binary
+Content-Location: https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,800&display=swap
+
+@charset "utf-8";
+
+@font-face { font-family: "Bricolage Grotesque"; font-style: normal; font-weight: 400; font-stretch: 100%; font-display: swap; src: url("https://fonts.gstatic.com/s/bricolagegrotesque/v9/3y9K6as8bTXq_nANBjzKo3IeZx8z6up5BeSl9D4dj_x9PpZBMlGHInHWVyNJtvI.woff2") format("woff2"); unicode-range: U+102-103, U+110-111, U+128-129, U+168-169, U+1A0-1A1, U+1AF-1B0, U+300-301, U+303-304, U+308-309, U+323, U+329, U+1EA0-1EF9, U+20AB; }
+
+@font-face { font-family: "Bricolage Grotesque"; font-style: normal; font-weight: 400; font-stretch: 100%; font-display: swap; src: url("https://fonts.gstatic.com/s/bricolagegrotesque/v9/3y9K6as8bTXq_nANBjzKo3IeZx8z6up5BeSl9D4dj_x9PpZBMlGGInHWVyNJtvI.woff2") format("woff2"); unicode-range: U+100-2BA, U+2BD-2C5, U+2C7-2CC, U+2CE-2D7, U+2DD-2FF, U+304, U+308, U+329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF; }
+
+@font-face { font-family: "Bricolage Grotesque"; font-style: normal; font-weight: 400; font-stretch: 100%; font-display: swap; src: url("https://fonts.gstatic.com/s/bricolagegrotesque/v9/3y9K6as8bTXq_nANBjzKo3IeZx8z6up5BeSl9D4dj_x9PpZBMlGIInHWVyNJ.woff2") format("woff2"); unicode-range: U+0-FF, U+131, U+152-153, U+2BB-2BC, U+2C6, U+2DA, U+2DC, U+304, U+308, U+329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+
+@font-face { font-family: "Bricolage Grotesque"; font-style: normal; font-weight: 600; font-stretch: 100%; font-display: swap; src: url("https://fonts.gstatic.com/s/bricolagegrotesque/v9/3y9K6as8bTXq_nANBjzKo3IeZx8z6up5BeSl9D4dj_x9PpZBMlGHInHWVyNJtvI.woff2") format("woff2"); unicode-range: U+102-103, U+110-111, U+128-129, U+168-169, U+1A0-1A1, U+1AF-1B0, U+300-301, U+303-304, U+308-309, U+323, U+329, U+1EA0-1EF9, U+20AB; }
+
+@font-face { font-family: "Bricolage Grotesque"; font-style: normal; font-weight: 600; font-stretch: 100%; font-display: swap; src: url("https://fonts.gstatic.com/s/bricolagegrotesque/v9/3y9K6as8bTXq_nANBjzKo3IeZx8z6up5BeSl9D4dj_x9PpZBMlGGInHWVyNJtvI.woff2") format("woff2"); unicode-range: U+100-2BA, U+2BD-2C5, U+2C7-2CC, U+2CE-2D7, U+2DD-2FF, U+304, U+308, U+329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF; }
+
+@font-face { font-family: "Bricolage Grotesque"; font-style: normal; font-weight: 600; font-stretch: 100%; font-display: swap; src: url("https://fonts.gstatic.com/s/bricolagegrotesque/v9/3y9K6as8bTXq_nANBjzKo3IeZx8z6up5BeSl9D4dj_x9PpZBMlGIInHWVyNJ.woff2") format("woff2"); unicode-range: U+0-FF, U+131, U+152-153, U+2BB-2BC, U+2C6, U+2DA, U+2DC, U+304, U+308, U+329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+
+@font-face { font-family: "Bricolage Grotesque"; font-style: normal; font-weight: 800; font-stretch: 100%; font-display: swap; src: url("https://fonts.gstatic.com/s/bricolagegrotesque/v9/3y9K6as8bTXq_nANBjzKo3IeZx8z6up5BeSl9D4dj_x9PpZBMlGHInHWVyNJtvI.woff2") format("woff2"); unicode-range: U+102-103, U+110-111, U+128-129, U+168-169, U+1A0-1A1, U+1AF-1B0, U+300-301, U+303-304, U+308-309, U+323, U+329, U+1EA0-1EF9, U+20AB; }
+
+@font-face { font-family: "Bricolage Grotesque"; font-style: normal; font-weight: 800; font-stretch: 100%; font-display: swap; src: url("https://fonts.gstatic.com/s/bricolagegrotesque/v9/3y9K6as8bTXq_nANBjzKo3IeZx8z6up5BeSl9D4dj_x9PpZBMlGGInHWVyNJtvI.woff2") format("woff2"); unicode-range: U+100-2BA, U+2BD-2C5, U+2C7-2CC, U+2CE-2D7, U+2DD-2FF, U+304, U+308, U+329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF; }
+
+@font-face { font-family: "Bricolage Grotesque"; font-style: normal; font-weight: 800; font-stretch: 100%; font-display: swap; src: url("https://fonts.gstatic.com/s/bricolagegrotesque/v9/3y9K6as8bTXq_nANBjzKo3IeZx8z6up5BeSl9D4dj_x9PpZBMlGIInHWVyNJ.woff2") format("woff2"); unicode-range: U+0-FF, U+131, U+152-153, U+2BB-2BC, U+2C6, U+2DA, U+2DC, U+304, U+308, U+329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+------MultipartBoundary--VS99tOvoi1ZAFwmMp22jnl7w973MDo8lha2nwWzJoS----
+Content-Type: text/css
+Content-Transfer-Encoding: binary
+Content-Location: cid:css-51b92729-9e7b-4322-b859-18b9af8c65c5@mhtml.blink
+
+@charset "utf-8";
+
+:root { --bg: #eef0f3; --card: #fff; --ink: #12161d; --mut: #5d6675; --line: #d9dde4; --acc: #2a47f5; --on: #fff; --ok: #12805c; --warn: #a65b00; }
+
+@media (prefers-color-scheme: dark) {
+  :root { --bg: #0e1116; --card: #171b23; --ink: #eef1f6; --mut: #98a2b3; --line: #2a303b; --acc: #7b91ff; --on: #0e1116; --ok: #4cd6a2; --warn: #ffb454; }
+}
+
+* { box-sizing: border-box; }
+
+body { margin: 0px; background: var(--bg); color: var(--ink); font-family: "Bricolage Grotesque", system-ui, sans-serif; padding-bottom: 84px; }
+
+header { position: sticky; top: 0px; background: var(--bg); z-index: 10; padding: 14px 16px 8px; display: flex; align-items: baseline; justify-content: space-between; gap: 10px; }
+
+.logo { font-weight: 800; font-size: 1.9rem; letter-spacing: -0.04em; }
+
+.logo i { font-style: normal; color: var(--acc); }
+
+header span { color: var(--mut); font-size: 0.9rem; text-align: right; }
+
+a { color: var(--acc); }
+
+main { max-width: 760px; margin: 0px auto; padding: 0px 16px; }
+
+input, select, textarea, button { font: inherit; color: inherit; }
+
+.in { width: 100%; background: var(--card); border: 1.5px solid var(--line); border-radius: 10px; padding: 12px; margin-top: 6px; }
+
+.in:focus-visible, button:focus-visible, [role="button"]:focus-visible { outline: 3px solid var(--acc); outline-offset: 2px; }
+
+.row { display: flex; gap: 8px; }
+
+.row > * { flex: 1 1 0%; }
+
+.chips { display: flex; gap: 8px; overflow-x: auto; padding: 10px 0px; }
+
+.chip { flex: 0 0 auto; border: 1.5px solid var(--line); background: var(--card); border-radius: 999px; padding: 7px 14px; cursor: pointer; }
+
+.chip.on { background: var(--ink); color: var(--bg); border-color: var(--ink); }
+
+.grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px; }
+
+@media (min-width: 620px) {
+  .grid { grid-template-columns: repeat(3, 1fr); }
+}
+
+.card { background: var(--card); border-radius: 14px; overflow: hidden; cursor: pointer; border: 1px solid var(--line); }
+
+.tile { height: 150px; display: flex; align-items: center; justify-content: center; font-size: 2.6rem; font-weight: 800; background: var(--line); color: var(--mut); }
+
+.info { padding: 10px 12px 12px; }
+
+.info h3 { margin: 0px 0px 4px; font-size: 1rem; font-weight: 600; line-height: 1.2; overflow-wrap: anywhere; }
+
+.pr { font-weight: 800; font-size: 1.1rem; }
+
+.mu { color: var(--mut); font-size: 0.85rem; }
+
+.badge { display: inline-block; background: var(--ok); color: var(--on); border-radius: 6px; padding: 2px 8px; font-size: 0.8rem; font-weight: 600; }
+
+.badge.w { background: var(--warn); }
+
+.badge.g { background: var(--mut); }
+
+.btn { background: var(--acc); color: var(--on); border: 0px; border-radius: 12px; padding: 14px; font-weight: 600; cursor: pointer; width: 100%; }
+
+.btn.alt { background: transparent; color: var(--ink); border: 1.5px solid var(--line); }
+
+.btn:disabled { opacity: 0.45; cursor: default; }
+
+.item { display: flex; gap: 12px; align-items: center; background: var(--card); border: 1px solid var(--line); border-radius: 14px; padding: 10px; margin-bottom: 10px; }
+
+.item .tile { width: 64px; height: 64px; font-size: 1.6rem; border-radius: 10px; flex: 0 0 auto; }
+
+.item .info { flex: 1 1 0%; padding: 0px; min-width: 0px; }
+
+.item .acts { display: flex; flex-direction: column; gap: 6px; }
+
+.sm { background: none; border: 1.5px solid var(--line); border-radius: 8px; padding: 6px 10px; cursor: pointer; font-size: 0.85rem; }
+
+h2 { margin: 6px 0px 12px; font-size: 1.4rem; letter-spacing: -0.02em; }
+
+label { display: block; margin-bottom: 12px; font-weight: 600; font-size: 0.9rem; }
+
+.empty { text-align: center; color: var(--mut); padding: 40px 10px; line-height: 1.5; }
+
+.note { background: var(--card); border: 1px dashed var(--line); border-radius: 12px; padding: 12px; color: var(--mut); font-size: 0.9rem; margin: 10px 0px; line-height: 1.45; }
+
+nav { position: fixed; left: 0px; right: 0px; bottom: 0px; background: var(--card); border-top: 1px solid var(--line); display: flex; padding: 8px 6px calc(8px + env(safe-area-inset-bottom,0px)); z-index: 10; }
+
+nav button { flex: 1 1 0%; background: none; border: 0px; padding: 6px 4px; cursor: pointer; color: var(--mut); font-size: 0.72rem; display: flex; flex-direction: column; align-items: center; gap: 3px; }
+
+nav .ic { position: relative; display: block; height: 26px; }
+
+nav svg, .ib svg { width: 25px; height: 25px; stroke: currentcolor; fill: none; stroke-width: 1.9; stroke-linecap: round; stroke-linejoin: round; }
+
+nav .dot { position: absolute; top: -4px; right: -10px; background: var(--warn); color: var(--on); font-style: normal; font-size: 0.65rem; font-weight: 800; min-width: 17px; height: 17px; border-radius: 9px; display: flex; align-items: center; justify-content: center; padding: 0px 4px; }
+
+nav button.on { color: var(--acc); font-weight: 800; }
+
+#sheet { position: fixed; inset: 0px; background: rgba(0, 0, 0, 0.55); z-index: 30; display: flex; align-items: flex-end; justify-content: center; }
+
+.sh { background: var(--bg); width: 100%; max-width: 560px; border-radius: 20px 20px 0px 0px; padding: 16px 16px calc(16px + env(safe-area-inset-bottom,0px)); max-height: 92%; overflow: auto; }
+
+.sh .tile { height: 170px; border-radius: 14px; margin-bottom: 12px; font-size: 4rem; }
+
+#ml { max-height: 46vh; overflow: auto; margin: 10px 0px; display: flex; flex-direction: column; }
+
+.bub { max-width: 82%; padding: 8px 12px; border-radius: 14px; margin: 4px 0px; background: var(--card); border: 1px solid var(--line); overflow-wrap: anywhere; }
+
+.bub.me { margin-left: auto; background: var(--acc); color: var(--on); border: 0px; }
+
+.bub small { display: block; opacity: 0.7; font-size: 0.7rem; }
+
+#toast { position: fixed; left: 50%; bottom: 96px; transform: translateX(-50%); background: var(--ink); color: var(--bg); padding: 10px 18px; border-radius: 999px; z-index: 40; font-weight: 600; max-width: 90%; text-align: center; }
+
+#zoom { position: fixed; inset: 0px; background: rgba(0, 0, 0, 0.92); z-index: 50; display: flex; align-items: center; justify-content: center; padding: 12px; cursor: zoom-out; }
+
+#zoom img { max-width: 100%; max-height: 100%; object-fit: contain; }
+
+.big { width: 100%; max-height: 48vh; object-fit: contain; background: var(--line); border-radius: 14px; display: block; cursor: zoom-in; margin-bottom: 10px; }
+
+.thumbs { display: flex; gap: 8px; margin: 0px 0px 12px; flex-wrap: wrap; }
+
+.thumbs img { width: 64px; height: 64px; object-fit: cover; border-radius: 8px; border: 2px solid var(--line); cursor: pointer; }
+
+.thumbs img.on { border-color: var(--acc); }
+
+.av { width: 40px; height: 40px; border-radius: 50%; object-fit: cover; background: var(--line); display: flex; align-items: center; justify-content: center; font-weight: 800; color: var(--mut); flex: 0 0 auto; }
+
+.av.lg { width: 84px; height: 84px; font-size: 2rem; }
+
+.av.sm { width: 28px; height: 28px; font-size: 0.85rem; }
+
+.hd { display: flex; align-items: center; gap: 8px; }
+
+#who { display: flex; align-items: center; gap: 6px; }
+
+.ib { background: none; border: 0px; padding: 6px; cursor: pointer; color: var(--ink); display: flex; }
+
+.hide { display: none !important; }
+------MultipartBoundary--VS99tOvoi1ZAFwmMp22jnl7w973MDo8lha2nwWzJoS----
+Content-Type: text/html
+Content-ID: <frame-6202905F073929EDE1505EE6DD9B53C2@mhtml.blink>
+Content-Transfer-Encoding: binary
+Content-Location: https://esk93-c7a19.firebaseapp.com/__/auth/iframe?apiKey=AIzaSyAgM1-JdCNqP8fNz2IoEIdk0LavLuXetEo&appName=%5BDEFAULT%5D&v=10.14.1&eid=p&usegapi=1&jsh=m%3B%2F_%2Fscs%2Fabc-static%2F_%2Fjs%2Fk%3Dgapi.lb.fr.NwStCmsbVJ4.O%2Fd%3D1%2Frs%3DAHpOoo_6HDxoiWLkgSC_FQfcFOPTefeGBg%2Fm%3D__features__#id=I0_1795773627307&_gfid=I0_1795773627307&parent=https%3A%2F%2Fessoka93.netlify.app&pfname=&rpctoken=21876999
+
+<!DOCTYPE html><html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+
+</head>
+<body marginwidth="0" marginheight="0">
+
+
+</body></html>
+------MultipartBoundary--VS99tOvoi1ZAFwmMp22jnl7w973MDo8lha2nwWzJoS------
