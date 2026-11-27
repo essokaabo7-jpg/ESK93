@@ -1,0 +1,8 @@
+{
+      "relation": ["delegate_permission/common.handle_all_urls"],
+      "target": {
+        "namespace": "android_app",
+        "package_name": "app.netlify.essoka93.twa",
+        "sha256_cert_fingerprints": ["FA:B4:9C:66:17:91:CE:A7:8F:BB:E5:EB:BA:3A:30:B5:0D:E7:0E:D4:22:01:8E:15:20:AA:7F:14:54:DA:6C:6A"]
+      }
+}
