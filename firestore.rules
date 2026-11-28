@@ -108,7 +108,15 @@ service cloud.firestore {
         allow read: if signedIn() && request.auth.uid in chatMembers(cid);
         allow create: if signedIn() && request.auth.uid in chatMembers(cid)
           && request.resource.data.from == request.auth.uid
-          && request.resource.data.t is string && request.resource.data.t.size() <= 500;
+          && request.resource.data.t is string && request.resource.data.t.size() <= 500
+          // photo (JPEG compressée) facultative
+          && (!('img' in request.resource.data)
+            || (request.resource.data.img is string && request.resource.data.img.size() < 950000))
+          // fichier joint facultatif (≈ 700 Ko max)
+          && (!('file' in request.resource.data)
+            || (request.resource.data.file is map
+              && request.resource.data.file.n is string && request.resource.data.file.n.size() <= 120
+              && request.resource.data.file.d is string && request.resource.data.file.d.size() < 980000));
         allow update, delete: if false;
       }
     }
